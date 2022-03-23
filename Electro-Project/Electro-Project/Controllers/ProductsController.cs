@@ -23,28 +23,47 @@ namespace Electro_Project.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            var shopContext = _context.Products.Include(p => p.Manufacturer);
-            return View(await shopContext.ToListAsync());
+            ViewBag.products = _context.Products.Include(p => p.Manufacturer).ToList();
+            //ViewBag.mobilesContext = _context.Mobiles.Include(p => p.Manufacturer);
+            //ViewBag.laptopsContext = _context.Laptops.Include(p => p.Manufacturer);
+            //return View(await shopContext.ToListAsync());
+            return View();
         }
 
         // GET: Products/Details/5
-        //public async Task<IActionResult> Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
+        public async Task<IActionResult> Details(int? id)
+        {
 
-        //    var product = await _context.Products
-        //        .Include(p => p.Manufacturer)
-        //        .FirstOrDefaultAsync(m => m.Id == id);
-        //    if (product == null)
-        //    {
-        //        return NotFound();
-        //    }
+            var laptop = _context.Laptops.FirstOrDefault(p => p.Id == id);
+            if (laptop == null)
+            {
+                var mobile = _context.Mobiles.FirstOrDefault(p => p.Id == id);
+                if (mobile != null)
+                {
+                    return View(mobile);
+                }
+                ///error
+            }
+            else
+                return View(laptop);
 
-        //    return View(product);
-        //}
+
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products
+                .Include(p => p.Manufacturer)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
+        }
 
         //// GET: Products/Create
         //public IActionResult Create()
