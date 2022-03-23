@@ -21,28 +21,6 @@ namespace Electro_Project.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Electro_Project.Models.Dimension", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<float>("Height")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Thickness")
-                        .HasColumnType("real");
-
-                    b.Property<float>("Width")
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Dimension", (string)null);
-                });
-
             modelBuilder.Entity("Electro_Project.Models.Manufacturer", b =>
                 {
                     b.Property<int>("Id")
@@ -124,11 +102,11 @@ namespace Electro_Project.Migrations
                     b.Property<int>("Color")
                         .HasColumnType("int");
 
-                    b.Property<int>("DimensionID")
-                        .HasColumnType("int");
-
                     b.Property<int>("GPU")
                         .HasColumnType("int");
+
+                    b.Property<float>("Height")
+                        .HasColumnType("real");
 
                     b.Property<int>("OS")
                         .HasColumnType("int");
@@ -142,10 +120,14 @@ namespace Electro_Project.Migrations
                     b.Property<int>("ScreenSize")
                         .HasColumnType("int");
 
+                    b.Property<float>("Thickness")
+                        .HasColumnType("real");
+
                     b.Property<float>("Weight")
                         .HasColumnType("real");
 
-                    b.HasIndex("DimensionID");
+                    b.Property<float>("Width")
+                        .HasColumnType("real");
 
                     b.ToTable("Laptop", (string)null);
                 });
@@ -160,11 +142,11 @@ namespace Electro_Project.Migrations
                     b.Property<int>("Color")
                         .HasColumnType("int");
 
-                    b.Property<int>("DimensionID")
-                        .HasColumnType("int");
-
                     b.Property<string>("GPU")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Height")
+                        .HasColumnType("real");
 
                     b.Property<int>("OS")
                         .HasColumnType("int");
@@ -172,10 +154,14 @@ namespace Electro_Project.Migrations
                     b.Property<int>("Ram")
                         .HasColumnType("int");
 
+                    b.Property<float>("Thickness")
+                        .HasColumnType("real");
+
                     b.Property<float>("Weight")
                         .HasColumnType("real");
 
-                    b.HasIndex("DimensionID");
+                    b.Property<float>("Width")
+                        .HasColumnType("real");
 
                     b.ToTable("Mobile", (string)null);
                 });
@@ -202,36 +188,20 @@ namespace Electro_Project.Migrations
 
             modelBuilder.Entity("Electro_Project.Models.Laptop", b =>
                 {
-                    b.HasOne("Electro_Project.Models.Dimension", "Dimension")
-                        .WithMany()
-                        .HasForeignKey("DimensionID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Electro_Project.Models.Product", null)
                         .WithOne()
                         .HasForeignKey("Electro_Project.Models.Laptop", "Id")
                         .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired();
-
-                    b.Navigation("Dimension");
                 });
 
             modelBuilder.Entity("Electro_Project.Models.Mobile", b =>
                 {
-                    b.HasOne("Electro_Project.Models.Dimension", "Dimension")
-                        .WithMany()
-                        .HasForeignKey("DimensionID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Electro_Project.Models.Product", null)
                         .WithOne()
                         .HasForeignKey("Electro_Project.Models.Mobile", "Id")
                         .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired();
-
-                    b.Navigation("Dimension");
                 });
 
             modelBuilder.Entity("Electro_Project.Models.Product", b =>
