@@ -1,5 +1,11 @@
-var builder = WebApplication.CreateBuilder(args);
+using Electro_Project.Models.Context;
+using Microsoft.EntityFrameworkCore;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ShopContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ShopDB"));
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
