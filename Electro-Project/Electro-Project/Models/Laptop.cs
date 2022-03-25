@@ -35,6 +35,5 @@ namespace Electro_Project.Models
 
 
 
-
     }
 }

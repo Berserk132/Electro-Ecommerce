@@ -8,34 +8,35 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Electro_Project.Models;
 using Electro_Project.Models.Context;
+using Electro_Project.Models.Services;
 
 namespace Electro_Project.Controllers
 {
     public class ManufacturersController : Controller
     {
-        private readonly ShopContext _context;
+        private readonly IManufactureService service;
 
-        public ManufacturersController(ShopContext context)
+        public ManufacturersController(IManufactureService _service)
         {
-            _context = context;
+            service = _service;
         }
 
         // GET: Manufacturers
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Manufacturer.ToListAsync());
+            return View(service.GetAll().ToList());
         }
 
         // GET: Manufacturers/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var manufacturer = await _context.Manufacturer
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var manufacturer = service.GetById(id);
+
             if (manufacturer == null)
             {
                 return NotFound();
@@ -59,22 +60,21 @@ namespace Electro_Project.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(manufacturer);
-                await _context.SaveChangesAsync();
+                service.Add(manufacturer);
                 return RedirectToAction(nameof(Index));
             }
             return View(manufacturer);
         }
 
         // GET: Manufacturers/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var manufacturer = await _context.Manufacturer.FindAsync(id);
+            var manufacturer = service.GetById(id);
             if (manufacturer == null)
             {
                 return NotFound();
@@ -87,7 +87,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Manufacturer manufacturer)
+        public IActionResult Edit(int id, [Bind("Id,Name")] Manufacturer manufacturer)
         {
             if (id != manufacturer.Id)
             {
@@ -98,8 +98,7 @@ namespace Electro_Project.Controllers
             {
                 try
                 {
-                    _context.Update(manufacturer);
-                    await _context.SaveChangesAsync();
+                    service.Delete(id);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -118,15 +117,15 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Manufacturers/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var manufacturer = await _context.Manufacturer
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var manufacturer = service.GetById(id);
+
             if (manufacturer == null)
             {
                 return NotFound();
@@ -138,17 +137,16 @@ namespace Electro_Project.Controllers
         // POST: Manufacturers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var manufacturer = await _context.Manufacturer.FindAsync(id);
-            _context.Manufacturer.Remove(manufacturer);
-            await _context.SaveChangesAsync();
+            var manufacturer = service.GetById(id);
+            service.Delete(id);
             return RedirectToAction(nameof(Index));
         }
 
         private bool ManufacturerExists(int id)
         {
-            return _context.Manufacturer.Any(e => e.Id == id);
+            return service.GetById(id) != null;
         }
     }
 }

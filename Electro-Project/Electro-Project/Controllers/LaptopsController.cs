@@ -8,36 +8,39 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Electro_Project.Models;
 using Electro_Project.Models.Context;
+using Electro_Project.Models.Services;
 
 namespace Electro_Project.Controllers
 {
     public class LaptopsController : Controller
     {
-        private readonly ShopContext _context;
 
-        public LaptopsController(ShopContext context)
+        private ILaptopService service { get; set; }
+        private IManufactureService manufacturerService { get; set; }
+
+        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService)
         {
-            _context = context;
+            service = _service;
+            manufacturerService = _manufacturerService;
         }
 
         // GET: Laptops
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var shopContext = _context.Laptops.Include(l => l.Manufacturer);
-            return View(await shopContext.ToListAsync());
+            var shopContext = service.GetAll();
+            return View(shopContext.ToList());
         }
 
         // GET: Laptops/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var laptop = await _context.Laptops
-                .Include(l => l.Manufacturer)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var laptop = service.GetById(id);
+
             if (laptop == null)
             {
                 return NotFound();
@@ -46,10 +49,10 @@ namespace Electro_Project.Controllers
             return View(laptop);
         }
 
-        // GET: Laptops/Create
+        //GET: Laptops/Create
         public IActionResult Create()
         {
-            ViewData["ManufacturerID"] = new SelectList(_context.Set<Manufacturer>(), "Id", "Id");
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id");
             return View();
         }
 
@@ -62,28 +65,27 @@ namespace Electro_Project.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(laptop);
-                await _context.SaveChangesAsync();
+                service.Add(laptop);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ManufacturerID"] = new SelectList(_context.Set<Manufacturer>(), "Id", "Id", laptop.ManufacturerID);
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id", laptop.ManufacturerID);
             return View(laptop);
         }
 
         // GET: Laptops/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var laptop = await _context.Laptops.FindAsync(id);
+            var laptop = service.GetById(id);
             if (laptop == null)
             {
                 return NotFound();
             }
-            ViewData["ManufacturerID"] = new SelectList(_context.Set<Manufacturer>(), "Id", "Id", laptop.ManufacturerID);
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id", laptop.ManufacturerID);
             return View(laptop);
         }
 
@@ -103,8 +105,7 @@ namespace Electro_Project.Controllers
             {
                 try
                 {
-                    _context.Update(laptop);
-                    await _context.SaveChangesAsync();
+                    service.Update(id, laptop);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -119,21 +120,20 @@ namespace Electro_Project.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ManufacturerID"] = new SelectList(_context.Set<Manufacturer>(), "Id", "Id", laptop.ManufacturerID);
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id", laptop.ManufacturerID);
             return View(laptop);
         }
 
         // GET: Laptops/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var laptop = await _context.Laptops
-                .Include(l => l.Manufacturer)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var laptop = service.GetById(id);
+
             if (laptop == null)
             {
                 return NotFound();
@@ -145,17 +145,16 @@ namespace Electro_Project.Controllers
         // POST: Laptops/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var laptop = await _context.Laptops.FindAsync(id);
-            _context.Laptops.Remove(laptop);
-            await _context.SaveChangesAsync();
+
+            service.Delete(id);
             return RedirectToAction(nameof(Index));
         }
 
         private bool LaptopExists(int id)
         {
-            return _context.Laptops.Any(e => e.Id == id);
+            return service.GetById(id) != null;
         }
     }
 }
