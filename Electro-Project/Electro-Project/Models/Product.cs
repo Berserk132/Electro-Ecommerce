@@ -17,6 +17,7 @@ namespace Electro_Project.Models
         public ICollection<Media> Media { get; set; } = new List<Media>();
 
         public Manufacturer? Manufacturer { get; set; }
+
         [ForeignKey("Manufacturer")]
         public int ManufacturerID { get; set; }
 

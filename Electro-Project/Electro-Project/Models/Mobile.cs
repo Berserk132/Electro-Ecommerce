@@ -19,9 +19,9 @@ namespace Electro_Project.Models
         public Color Color { get; set; }
         public string? CPU { get; set; }
 
-        public Dimension? Dimension { get; set;}
-        [ForeignKey("Dimension")]
-        public int DimensionID { get; set; }
+        public float Width { get; set; }
+        public float Height { get; set; }
+        public float Thickness { get; set; }
         public float Weight { get; set; }
     }
 }

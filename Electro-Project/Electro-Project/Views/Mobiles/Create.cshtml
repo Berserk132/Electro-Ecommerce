@@ -1,0 +1,104 @@
+﻿@using Electro_Project.Models.Enums
+@using Electro_Project.Models.Enums.Mobile
+@model Electro_Project.Models.Mobile
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Mobile</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Ram" class="control-label"></label>
+                <select asp-for="Ram" asp-items="Html.GetEnumSelectList<MobileRam>()" class="form-control"></select>
+                <span asp-validation-for="Ram" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GPU" class="control-label"></label>
+                <input asp-for="GPU" class="form-control" />
+                <span asp-validation-for="GPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OS" class="control-label"></label>
+                <select asp-for="OS" asp-items="Html.GetEnumSelectList<MobileOS>()" class="form-control"></select>
+                <span asp-validation-for="OS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <select asp-for="Color"asp-items="Html.GetEnumSelectList<Color>()" class="form-control"></select>
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CPU" class="control-label"></label>
+                <input asp-for="CPU" class="form-control" />
+                <span asp-validation-for="CPU" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Width" class="control-label"></label>
+                <input asp-for="Width" class="form-control" />
+                <span asp-validation-for="Width" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Height" class="control-label"></label>
+                <input asp-for="Height" class="form-control" />
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Thickness" class="control-label"></label>
+                <input asp-for="Thickness" class="form-control" />
+                <span asp-validation-for="Thickness" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ManufacturerID" class="control-label"></label>
+                <select asp-for="ManufacturerID" class ="form-control" asp-items="ViewBag.ManufacturerID"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Warranty" class="control-label"></label>
+                <input asp-for="Warranty" class="form-control" />
+                <span asp-validation-for="Warranty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UnitInStock" class="control-label"></label>
+                <input asp-for="UnitInStock" class="form-control" />
+                <span asp-validation-for="UnitInStock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -9,7 +9,7 @@ namespace Electro_Project.Models
 
         [EnumDataType(typeof(LaptopRam))]
 
-        public LaptopRam Ram { get; set; }
+        public LaptopRam Ram { get; set;}
         [EnumDataType(typeof(LaptopRamType))]
 
         public LaptopRamType RamType { get; set; }
@@ -26,11 +26,12 @@ namespace Electro_Project.Models
 
         public LaptopScreen ScreenSize { get; set; }
         public string? CPU { get; set; }
-        public Dimension? Dimension { get; set; }
-        [ForeignKey("Dimension")]
-        public int DimensionID { get; set; }
-        public float Weight { get; set; }
 
+        public float Width { get; set; }
+        public float Height { get; set; }
+        public float Thickness { get; set; }
+
+        public float Weight { get; set; }
 
 
 

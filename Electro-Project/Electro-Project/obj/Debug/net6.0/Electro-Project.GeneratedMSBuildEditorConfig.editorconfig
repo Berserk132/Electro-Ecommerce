@@ -23,6 +23,86 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Laptops/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFwdG9wc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Laptops/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFwdG9wc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Laptops/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFwdG9wc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Laptops/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFwdG9wc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Laptops/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFwdG9wc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Manufacturers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Manufacturers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Manufacturers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Manufacturers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Manufacturers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Mobiles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Mobiles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Mobiles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Mobiles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Mobiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
