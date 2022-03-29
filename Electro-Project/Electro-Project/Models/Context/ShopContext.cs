@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Electro_Project.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Electro_Project.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace Electro_Project.Models.Context
 {
-    public class ShopContext: DbContext
+    //public class ShopContext: DbContext
+    public class ShopContext: IdentityDbContext<AppUser>
     {
 
-        public ShopContext():base()
-        {
-
-        }
 
         public ShopContext(DbContextOptions<ShopContext> options) :base(options)
         {
@@ -29,7 +29,7 @@ namespace Electro_Project.Models.Context
             modelBuilder.Entity<Laptop>().ToTable("Laptop");
             modelBuilder.Entity<Media>().ToTable("Media");
 
-
+            base.OnModelCreating(modelBuilder); /// For IdentityDbContext Mapping
         }
 
 

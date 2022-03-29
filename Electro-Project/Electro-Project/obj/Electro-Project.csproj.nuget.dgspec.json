@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {}
+    "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {}
   },
   "projects": {
-    "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {
+    "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+        "projectUniqueName": "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
         "projectName": "Electro-Project",
-        "projectPath": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
-        "packagesPath": "C:\\Users\\Berserk\\.nuget\\packages\\",
-        "outputPath": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
+        "projectPath": "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+        "packagesPath": "C:\\Users\\Sameh\\.nuget\\packages\\",
+        "outputPath": "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Berserk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Sameh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -87,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
