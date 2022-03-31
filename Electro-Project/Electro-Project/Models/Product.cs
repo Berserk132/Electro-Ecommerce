@@ -14,7 +14,7 @@ namespace Electro_Project.Models
         public decimal Price { get; set; }
 
         [Required]
-        public ICollection<Media> Media { get; set; } = new List<Media>();
+        public List<Media> Media { get; set; } = new List<Media>();
 
         public Manufacturer? Manufacturer { get; set; }
 

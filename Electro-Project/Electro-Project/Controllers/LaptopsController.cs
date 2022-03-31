@@ -9,16 +9,18 @@ using Microsoft.EntityFrameworkCore;
 using Electro_Project.Models;
 using Electro_Project.Models.Context;
 using Electro_Project.Models.Services;
+using Electro_Project.Controllers.BaseController;
+using Electro_Project.Models.Cart;
 
 namespace Electro_Project.Controllers
 {
-    public class LaptopsController : Controller
+    public class LaptopsController : MainController
     {
 
         private ILaptopService service { get; set; }
         private IManufactureService manufacturerService { get; set; }
 
-        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService)
+        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService, ShoppingCart shoppingCart) : base(shoppingCart)
         {
             service = _service;
             manufacturerService = _manufacturerService;

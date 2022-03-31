@@ -9925,23 +9925,29 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.2",
+      "Newtonsoft.Json >= 13.0.1",
       "System.ComponentModel.Annotations >= 5.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sameh\\.nuget\\packages\\": {}
+    "C:\\Users\\Berserk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+      "projectUniqueName": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
       "projectName": "Electro-Project",
-      "projectPath": "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
-      "packagesPath": "C:\\Users\\Sameh\\.nuget\\packages\\",
-      "outputPath": "E:\\ITI\\MVC_Intk42\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
+      "projectPath": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+      "packagesPath": "C:\\Users\\Berserk\\.nuget\\packages\\",
+      "outputPath": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Sameh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Berserk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9995,6 +10001,10 @@
             "target": "Package",
             "version": "[6.0.2, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "System.ComponentModel.Annotations": {
             "target": "Package",
             "version": "[5.0.0, )"
@@ -10018,7 +10028,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

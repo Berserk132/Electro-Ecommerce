@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                        <a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id"><button  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
                                     </div>
                                 </div>
                                 }
