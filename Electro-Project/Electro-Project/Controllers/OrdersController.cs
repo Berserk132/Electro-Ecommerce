@@ -32,7 +32,7 @@ namespace Electro_Project.Controllers
         }
 
         [HttpPost]
-        public bool FinalizeOrder(Address address)
+        public bool FinalizeOrder(CheckoutVM ch)
         {
 
             //var response = new ShoppingCartVM()
