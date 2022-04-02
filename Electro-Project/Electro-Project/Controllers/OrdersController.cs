@@ -1,4 +1,5 @@
 ﻿using Electro_Project.Controllers.BaseController;
+using Electro_Project.Models;
 using Electro_Project.Models.Cart;
 using Electro_Project.Models.Context;
 using Electro_Project.Models.ViewModel;
@@ -15,6 +16,34 @@ namespace Electro_Project.Controllers
         {
             context = _context;
             shoppingCart = _shoppingCart;
+        }
+
+        public IActionResult FinalizeOrder()
+        {
+
+            var response = new CheckoutVM()
+            {
+                ShoppingCart = shoppingCart,
+                ShoppingCartTotal = shoppingCart.GetShoppingCartTotal(),
+                ShippingAddress = new Address()
+            };
+
+            return View(response);
+        }
+
+        [HttpPost]
+        public bool FinalizeOrder(Address address)
+        {
+
+            //var response = new ShoppingCartVM()
+            //{
+            //    ShoppingCart = shoppingCart,
+            //    ShoppingCartTotal = shoppingCart.GetShoppingCartTotal(),
+            //};
+
+            //return View(response);
+
+            return true;
         }
 
         public IActionResult ShoppingCart()

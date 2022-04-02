@@ -37,6 +37,9 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="~/css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="~/css/site.css"/>
+
+
 
 
 </head>
@@ -70,7 +73,7 @@
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-									<img src="./img/logo.png" alt="">
+									<img src="~/img/logo.png" alt="">
 								</a>
 							</div>
 						</div>
@@ -138,7 +141,7 @@
 										</div>
 										<div class="cart-btns">
 											<a asp-controller="Orders" asp-action="ShoppingCart">View Cart</a>
-											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+											<a asp-controller="Orders" asp-action="FinalizeOrder">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
 										</div>
 									</div>
 								</div>

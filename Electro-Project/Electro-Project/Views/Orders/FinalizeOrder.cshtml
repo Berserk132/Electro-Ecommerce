@@ -1,0 +1,133 @@
+﻿@using Electro_Project.Models.ViewModel
+@using Microsoft.Extensions.Options
+@model CheckoutVM
+@inject IOptions<Electro_Project.Models.PaymentSettings.PayPalSettings> PayPal
+
+
+<!-- SECTION -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+            <form asp-action="FinalizeOrder">
+                <div class="col-md-7">
+                    <!-- Billing Details -->
+                    <div class="billing-details">
+                        <div class="section-title">
+                            <h3 class="title">Shipping address</h3>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ShippingAddress.City"></label>
+                            <input asp-for="ShippingAddress.City" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ShippingAddress.Street"></label>
+                            <input asp-for="ShippingAddress.Street" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ShippingAddress.StreetNumber"></label>
+                            <input asp-for="ShippingAddress.StreetNumber" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ShippingAddress.FloorNumber"></label>
+                            <input asp-for="ShippingAddress.FloorNumber" class="input">
+                        </div>
+                    </div>
+                    <!-- /Billing Details -->
+                    <!-- Order notes -->
+                    <div class="order-notes">
+                        <textarea class="input" placeholder="Order Notes"></textarea>
+                    </div>
+                    <!-- /Order notes -->
+                </div>
+
+                <!-- Order Details -->
+                <div class="col-md-5 order-details">
+                    <div class="section-title text-center">
+                        <h3 class="title">Your Order</h3>
+                    </div>
+                    <div class="order-summary">
+                        <div class="order-col">
+                            <div><strong>PRODUCT</strong></div>
+                            <div><strong>TOTAL</strong></div>
+                        </div>
+                        <div class="order-products">
+                            @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+                            {
+                                <div class="order-col">
+                                    <div>@{
+                                            @item.Amount
+                                        }x @{
+                                            @item.Product.Name
+                                        }</div>
+                                    <div>@item.getTotal()</div>
+                                </div>
+                            }
+                        </div>
+                        <div class="order-col">
+                            <div>Shiping</div>
+                            <div><strong>FREE</strong></div>
+                        </div>
+                        <div class="order-col">
+                            <div><strong>TOTAL</strong></div>
+                            <div><strong class="order-total">$@Model.ShoppingCartTotal</strong></div>
+                        </div>
+                    </div>
+
+                    <a style="margin-bottom:30px;" class="primary-btn order-submit"><input type="submit" value="Place order" /></a>
+                    <div style="padding: 15px 0; margin-bottom: 20px; position: absolute; left: 50%; transform: translateX(-50%) translateY(-50%);" id="paypal-btn"></div>
+                </div>
+            </form>
+            <!-- /Order Details -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /SECTION -->
+@section Scripts{
+
+    <<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+<script>
+    let _total = @Model.ShoppingCartTotal.ToString();
+    paypal.Button.render({
+        //Configure environment
+        env: 'sandbox',
+        client: {
+            sandbox: 'AcKRtgL4i68EZ2ZYuYUx3ilihAg2YhL5dtF_m19A8MjBWVOn6ewNS4M_uV8gA3xi98zTcUq38gUHbVFx'
+        },
+        //Customize button
+        locale: 'en_US',
+        style: {
+            layout: "horizontal",
+            color: "black",
+            shape: "rect",
+            label: "paypal",
+            tagline: false,
+            height: 40,
+        },
+        commit: true,
+        //Set up a payment
+        payment: function (data, actions) {
+            return actions.payment.create({
+                transactions: [{
+                    amount: {
+                        total: _total,
+                        currency: 'USD'
+                    }
+                }]
+            });
+        },
+        //Execute the payment
+        onAuthorize: function (data, actions) {
+            return actions.payment.execute().then(function () {
+                var url = '@Url.Action("FinalizeOrder", "Orders", new { })';
+                window.location.href = url;
+            });
+        }
+    }, '#paypal-btn')
+</script>
+}

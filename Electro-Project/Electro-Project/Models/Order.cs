@@ -14,6 +14,8 @@ namespace Electro_Project.Models
         //[ForeignKey(nameof(UserId))]
         //public ApplicationUser User { get; set; }
 
+        public Address ShippingAddress { get; set; }
+
         public List<OrderItem> OrderItems { get; set; }
     }
 }

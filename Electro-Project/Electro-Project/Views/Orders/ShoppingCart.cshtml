@@ -6,8 +6,8 @@
 }
 
 <div class="row">
-    <div class="col-md-8 offset-2">
-        <div class="text-center">
+    <div class="col-md-12 offset-2 ">
+        <div class="text-center" style="margin-top: 20px;">
             <h2>You shopping cart summary</h2>
         </div>
 
@@ -55,15 +55,16 @@
             </tfoot>
         </table>
 
-        <div class="text-right">
-            <div class="btn-group">
-                @*<a class="btn btn-outline-primary" asp-action="CompleteOrder">
-                        Complete order
-                    </a>*@
-                <div id="paypal-btn"></div>
-                <span style="padding:5px"></span>
-                <a class="btn btn-outline-success" asp-controller="Products" asp-action="Index">
-                    Add more items
+        <div style="display:flex; justify-content:space-between; margin-bottom: 10px">
+
+            <div>
+                <a asp-action="FinalizeOrder">
+                    <button class="btn btn-success">Complete order</button>
+                </a>
+            </div>
+            <div>
+                <a style="text-decoration:none;" asp-controller="Products" asp-action="Index">
+                    <button class="btn btn-primary">Add more items</button>
                 </a>
             </div>
         </div>
@@ -71,44 +72,3 @@
     </div>
 </div>
 
-@*@section Scripts{
-
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-
-    <script>
-        let _total = @Html.Raw(Model.ShoppingCartTotal);
-        paypal.Button.render({
-            //Configure environment
-            env: 'sandbox',
-            client: {
-                sandbox: 'AcKRtgL4i68EZ2ZYuYUx3ilihAg2YhL5dtF_m19A8MjBWVOn6ewNS4M_uV8gA3xi98zTcUq38gUHbVFx'
-            },
-            //Customize button
-            locale: 'en_US',
-            style: {
-                size: 'small',
-                color: 'gold',
-                shape: 'pill'
-            },
-            commit: true,
-            //Set up a payment
-            payment: function (data, actions) {
-                return actions.payment.create({
-                    transactions: [{
-                        amount: {
-                            total: _total,
-                            currency: 'USD'
-                        }
-                    }]
-                });
-            },
-            //Execute the payment
-            onAuthorize: function (data, actions) {
-                return actions.payment.execute().then(function () {
-                    var url = '@Url.Action("CompleteOrder", "Orders", new { })';
-                    window.location.href = url;
-                });
-            }
-        }, '#paypal-btn')
-    </script>
-}*@

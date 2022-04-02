@@ -12,5 +12,10 @@ namespace Electro_Project.Models
         public string ShoppingCartId { get; set; }
 
         public Product Product { get; set; }
+
+        public decimal getTotal()
+		{
+            return Product.Price * Amount;
+		}
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Electro_Project.Areas.Identity.Data;
 using Electro_Project.Models.Cart;
 using Newtonsoft.Json;
+using Electro_Project.Models.PaymentSettings;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ShopContext>(options =>
@@ -19,13 +20,16 @@ builder.Services.AddDbContext<ShopContext>(options =>
 builder.Services.AddDefaultIdentity<AppUser>()
 .AddEntityFrameworkStores<ShopContext>();
 
+// Payment Services
+builder.Services.Configure<PayPalSettings>(builder.Configuration.GetSection("PayPal"));
+
 // Session Initiallizer
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
 
 // Custom Services
 builder.Services.AddScoped<ILaptopService, LaptopService>();
 builder.Services.AddScoped<IManufactureService, ManufactureService>();
-builder.Services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

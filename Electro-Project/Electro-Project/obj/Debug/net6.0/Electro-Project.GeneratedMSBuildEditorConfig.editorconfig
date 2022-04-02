@@ -111,6 +111,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Orders/FinalizeOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEZpbmFsaXplT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Orders/ShoppingCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFNob3BwaW5nQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -139,8 +143,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Shared/_Identity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JZGVudGl0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Shared/_TemplateLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZW1wbGF0ZUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Shared/_ValidationScriptsPartial.cshtml]

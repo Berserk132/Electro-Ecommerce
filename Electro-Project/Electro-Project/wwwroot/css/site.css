@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.btn-direction {
+
+    display: flex;
+    justify-content: center;
+}
