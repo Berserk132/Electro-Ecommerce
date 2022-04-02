@@ -8,14 +8,16 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Electro_Project.Models;
 using Electro_Project.Models.Context;
+using Electro_Project.Controllers.BaseController;
+using Electro_Project.Models.Cart;
 
 namespace Electro_Project.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsController : MainController
     {
         private readonly ShopContext _context;
 
-        public ProductsController(ShopContext context)
+        public ProductsController(ShopContext context, ShoppingCart shoppingCart) : base(shoppingCart)
         {
             _context = context;
         }
