@@ -34,5 +34,8 @@ namespace Electro_Project.Models.Context
 
 
         public DbSet<Electro_Project.Models.Manufacturer> Manufacturer { get; set; }
+
+
+        public DbSet<Electro_Project.Models.RoleViewModel> RoleViewModel { get; set; }
     }
 }

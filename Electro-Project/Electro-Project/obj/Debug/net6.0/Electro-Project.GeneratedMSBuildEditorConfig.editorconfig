@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = G:\FCI-CU\Repos\Electro-Ecommerce\Electro-Project\Electro-Project
 build_property._RazorSourceGeneratorDebug = 
 
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Areas/Identity/Pages/Account/AdminRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBZG1pblJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -129,6 +133,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Role/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/FCI-CU/Repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Shared/Error.cshtml]

@@ -9,9 +9,11 @@ using Microsoft.EntityFrameworkCore;
 using Electro_Project.Models;
 using Electro_Project.Models.Context;
 using Electro_Project.Models.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Electro_Project.Controllers
 {
+    //[Authorize]
     public class LaptopsController : Controller
     {
 
@@ -32,6 +34,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Laptops/Details/5
+        //[AllowAnonymous]
         public IActionResult Details(int id)
         {
             if (id == null)

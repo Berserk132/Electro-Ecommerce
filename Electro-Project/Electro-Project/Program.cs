@@ -14,8 +14,9 @@ builder.Services.AddDbContext<ShopContext>(options =>
 //    .AddEntityFrameworkStores<IdentityContext>();builder.Services.AddDbContext<IdentityContext>(options =>
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("ShopDB"/*"IdentityContextConnection"*/)));
 
-builder.Services.AddDefaultIdentity<AppUser>()
+builder.Services.AddDefaultIdentity<AppUser>().AddRoles<IdentityRole>()
 .AddEntityFrameworkStores<ShopContext>();
+
 
 
 // Custom Services
