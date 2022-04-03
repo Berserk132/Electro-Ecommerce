@@ -19,20 +19,22 @@
                             <h3 class="title">Shipping address</h3>
                         </div>
                         <div class="form-group">
+                            <input id="address-id" asp-for="ShippingAddress.Id" class="input" hidden>
+
                             <label asp-for="ShippingAddress.City"></label>
-                            <input asp-for="ShippingAddress.City" class="input">
+                            <input id="address-city" asp-for="ShippingAddress.City" class="input">
                         </div>
                         <div class="form-group">
                             <label asp-for="ShippingAddress.Street"></label>
-                            <input asp-for="ShippingAddress.Street" class="input">
+                            <input id="address-street" asp-for="ShippingAddress.Street" class="input">
                         </div>
                         <div class="form-group">
                             <label asp-for="ShippingAddress.StreetNumber"></label>
-                            <input asp-for="ShippingAddress.StreetNumber" class="input">
+                            <input id="address-streetnumber" asp-for="ShippingAddress.StreetNumber" class="input">
                         </div>
                         <div class="form-group">
                             <label asp-for="ShippingAddress.FloorNumber"></label>
-                            <input asp-for="ShippingAddress.FloorNumber" class="input">
+                            <input id="address-floornumber" asp-for="ShippingAddress.FloorNumber" class="input">
                         </div>
                     </div>
                     <!-- /Billing Details -->
@@ -57,11 +59,13 @@
                             @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
                             {
                                 <div class="order-col">
-                                    <div>@{
+                                    <div>
+                                        @{
                                             @item.Amount
                                         }x @{
                                             @item.Product.Name
-                                        }</div>
+                                        }
+                                    </div>
                                     <div>@item.getTotal()</div>
                                 </div>
                             }
@@ -77,7 +81,7 @@
                     </div>
 
                     <a style="margin-bottom:30px;" class="primary-btn order-submit"><input type="submit" value="Place order" /></a>
-                    <div style="padding: 15px 0; margin-bottom: 20px; position: absolute; left: 50%; transform: translateX(-50%) translateY(-50%);" id="paypal-btn"></div>
+                    <div style="padding: 15px 0; margin-bottom: 20px; position: absolute; left: 50%; transform: translateX(-50%) translateY(-50%);" id="paypal-button"></div>
                 </div>
             </form>
             <!-- /Order Details -->
@@ -89,45 +93,63 @@
 <!-- /SECTION -->
 @section Scripts{
 
-    <<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
-<script>
-    let _total = @Model.ShoppingCartTotal.ToString();
-    paypal.Button.render({
-        //Configure environment
-        env: 'sandbox',
-        client: {
-            sandbox: 'AcKRtgL4i68EZ2ZYuYUx3ilihAg2YhL5dtF_m19A8MjBWVOn6ewNS4M_uV8gA3xi98zTcUq38gUHbVFx'
-        },
-        //Customize button
-        locale: 'en_US',
-        style: {
-            layout: "horizontal",
-            color: "black",
-            shape: "rect",
-            label: "paypal",
-            tagline: false,
-            height: 40,
-        },
-        commit: true,
-        //Set up a payment
-        payment: function (data, actions) {
+    <script>
+        paypal.Button.render({
+            // Configure environment
+            env: 'sandbox',
+            client: {
+            sandbox: 'AUdOKq-xKp-xjeqk_wCF11Bceq449TE66ddsIaeaVErN4KF16Jrgt5EhDW8dz-Dq2G04ZS4UvdGckOhL',
+            },
+            // Customize button (optional)
+            locale: 'en_US',
+            style: {
+                layout: "horizontal",
+                color: "black",
+                shape: "rect",
+                label: "paypal",
+                tagline: false,
+                height: 40,
+            },
+            // Enable Pay Now checkout flow (optional)
+            commit: true,
+            // Set up a payment
+            payment: function(data, actions) {
             return actions.payment.create({
                 transactions: [{
-                    amount: {
-                        total: _total,
-                        currency: 'USD'
-                    }
+                amount: {
+                    total: @Model.ShoppingCartTotal.ToString(),
+                    currency: 'USD',
+                }
                 }]
             });
-        },
-        //Execute the payment
-        onAuthorize: function (data, actions) {
-            return actions.payment.execute().then(function () {
-                var url = '@Url.Action("FinalizeOrder", "Orders", new { })';
-                window.location.href = url;
+            },
+            // Execute the payment
+            onAuthorize: function(data, actions) {
+            return actions.payment.execute().then(function() {
+
+                let city = $('#address-city').val();
+                let street = $('#address-street').val();
+                let streetnumber = $('#address-streetnumber').val();
+                let floornumber = $('#address-floornumber').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "FinalizeOrder",
+                    data: {
+                        City: city,
+                        Street: street,
+                        StreetNumber: parseInt( streetnumber),
+                        FloorNumber: parseInt(floornumber),
+                    },
+                    success: function(resultData){
+                        var url = '@Url.Action("ShoppingCart", "Orders", new { })';
+                        window.location.href = url;
+                    },
+                });
             });
-        }
-    }, '#paypal-btn')
-</script>
+            }
+        }, '#paypal-button');
+    </script>
 }

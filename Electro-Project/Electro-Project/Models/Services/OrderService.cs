@@ -23,12 +23,13 @@ namespace Electro_Project.Models.Services
             return orders;
         }
 
-        public void StoreOrder(List<ShoppingCartItem> items, string userId, string userEmailAddress)
+        public void StoreOrder(List<ShoppingCartItem> items, string userId, string userEmailAddress, Address address)
         {
             var order = new Order()
             {
                 UserId = userId,
-                Email = userEmailAddress
+                Email = userEmailAddress,
+                ShippingAddress = address
             };
             context.Orders.Add(order);
             context.SaveChanges();

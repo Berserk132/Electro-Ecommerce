@@ -25,7 +25,7 @@ namespace Electro_Project.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            ViewBag.products = _context.Products.Include(p => p.Manufacturer).ToList();
+            ViewBag.products = _context.Products.Include(p => p.Manufacturer).Include(p => p.Media).ToList();
             //ViewBag.mobilesContext = _context.Mobiles.Include(p => p.Manufacturer);
             //ViewBag.laptopsContext = _context.Laptops.Include(p => p.Manufacturer);
             //return View(await shopContext.ToListAsync());

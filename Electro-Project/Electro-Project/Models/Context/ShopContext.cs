@@ -20,7 +20,8 @@ namespace Electro_Project.Models.Context
         public DbSet<Laptop> Laptops { get; set; }
         public DbSet<Media> Medias { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Manufacturer> Manufacturer { get; set; }
+        public DbSet<RoleViewModel> RoleViewModel { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
@@ -37,9 +38,6 @@ namespace Electro_Project.Models.Context
         }
 
 
-        public DbSet<Electro_Project.Models.Manufacturer> Manufacturer { get; set; }
-
-
-        public DbSet<Electro_Project.Models.RoleViewModel> RoleViewModel { get; set; }
+        
     }
 }

@@ -12,6 +12,21 @@ builder.Services.AddDbContext<ShopContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ShopDB"));
 });
 
+
+// enable cors
+var MyAllowSpecificOrigins = "";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins,
+    builder =>
+    {
+        builder.AllowAnyOrigin();
+        builder.AllowAnyMethod();
+        builder.AllowAnyHeader();
+    });
+});
+
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 //    .AddEntityFrameworkStores<IdentityContext>();builder.Services.AddDbContext<IdentityContext>(options =>
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("ShopDB"/*"IdentityContextConnection"*/)));
@@ -28,15 +43,21 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
 
 
+//Payment Services
+//PayPal
+builder.Services.Configure<PayPalSettings>(builder.Configuration.GetSection("PayPal"));
+
 
 // Custom Services
 builder.Services.AddScoped<ILaptopService, LaptopService>();
+builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IManufactureService, ManufactureService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddSession();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -51,6 +72,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
+app.UseCors(MyAllowSpecificOrigins);
 
 app.MapControllerRoute(
     name: "default",
