@@ -35,6 +35,17 @@ namespace Electro_Project.Controllers
             clientFactory = _clientFactory;
         }
 
+
+        public IActionResult Index()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userEmailAddress = User.FindFirstValue(ClaimTypes.Email);
+
+            var orders = ordersService.GetOrdersByUserIdAndRole(userId, userEmailAddress);
+
+            return View(orders);
+        }
+
         public async Task<IActionResult> FinalizeOrder()
         {
 

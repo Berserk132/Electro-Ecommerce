@@ -13,7 +13,7 @@ namespace Electro_Project.Models.Services
 
         public List<Order> GetOrdersByUserIdAndRole(string userId, string userRole)
         {
-            var orders = context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Product).ToList();
+            var orders = context.Orders.Include(n => n.OrderItems).ThenInclude(n => n.Product).Include(n => n.User).ToList();
 
             if (userRole != "Admin")
             {
@@ -29,7 +29,7 @@ namespace Electro_Project.Models.Services
             {
                 UserId = userId,
                 Email = userEmailAddress,
-                ShippingAddress = address
+                ShippingAddress = address,
             };
             context.Orders.Add(order);
             context.SaveChanges();
