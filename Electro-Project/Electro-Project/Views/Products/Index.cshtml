@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Electro_Project.Models.Product>
 @{
 
-    var products = (List<Product>) ViewBag.products;
+    var products = (List<Product>)ViewBag.products;
 }
 <!-- SECTION -->
 <div class="section">
@@ -15,12 +15,12 @@
                     <h3 class="title">New Products</h3>
                     @*<div class="section-nav">
                         <ul class="section-tab-nav tab-nav">
-                            <li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-                            <li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
-                            <li><a data-toggle="tab" href="#tab1">Cameras</a></li>
-                            <li><a data-toggle="tab" href="#tab1">Accessories</a></li>
+                        <li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
+                        <li><a data-toggle="tab" href="#tab1">Smartphones</a></li>
+                        <li><a data-toggle="tab" href="#tab1">Cameras</a></li>
+                        <li><a data-toggle="tab" href="#tab1">Accessories</a></li>
                         </ul>
-                    </div>*@
+                        </div>*@
                 </div>
             </div>
             <!-- /section title -->
@@ -32,11 +32,12 @@
                         <div id="tab1" class="tab-pane active">
                             <div class="products-slick" data-nav="#slick-nav-1">
                                 <!-- product -->
-                                @foreach(var item in products)
+                                @foreach (var item in products)
                                 {
+
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="@item.Media.FirstOrDefault().ImageURL" alt="">
+                                            <img src="~/img/@(item.Media.FirstOrDefault() != null ? item.Media.FirstOrDefault().ImageURL : "noImg.jpg" )" alt="">
                                             <div class="product-label">
                                                 <span class="sale">-30%</span>
                                                 <span class="new">NEW</span>
@@ -45,31 +46,31 @@
                                         <div class="product-body">
                                             <p class="product-category">Category</p>
                                             <h3 class="product-name"><a href="#">@item.Name</a></h3>
-                                                <h4 class="product-price">@item.Price <del class="product-old-price"> @(@item.Price - 2000)</del></h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                                            <h4 class="product-price">@item.Price <del class="product-old-price"> @(@item.Price - 2000)</del></h4>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="product-btns">
+                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                                <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view">
                                                     <a asp-controller=@(item.GetType().ToString().Split(".")[2] + "s" )
-                                                    asp-action="Details" asp-route-id="@item.Id" > 
+                                                   asp-action="Details" asp-route-id="@item.Id">
                                                         <i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
                                                     </a>
-                                               </button>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
                                         </div>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id"><button  class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
-                                    </div>
-                                </div>
                                 }
-                              
+
                             </div>
                             <div id="slick-nav-1" class="products-slick-nav"></div>
                         </div>
