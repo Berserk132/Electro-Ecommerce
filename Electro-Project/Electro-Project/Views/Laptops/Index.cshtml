@@ -143,8 +143,9 @@
         <!-- /SCREEN -->
         <!-- /aside Widget -->
     </div>
-    <div id="store" class="col-md-9">
         <!-- store top filter -->
+      <div  class="col-md-9">
+
         <div class="store-filter clearfix">
             <div class="store-sort">
                 <label>
@@ -170,8 +171,11 @@
                 <li><a href="#"><i class="fa fa-th-list"></i></a></li>
             </ul>
         </div>
+        </div>
+        </form>
         <!-- /store top filter -->
         <!-- store products -->
+    <div id="store" class="col-md-9">
         <div class="row">
             @foreach (var item in @Model)
             {
@@ -200,8 +204,7 @@
                                 <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
                                 <button class="quick-view">
-                                    <a asp-controller=@(item.GetType().ToString().Split(".")[2] + "s" )
-                                   asp-action="Details" asp-route-id="@item.Id">
+                                   <a asp-controller=@(item.GetType().ToString().Split(".")[2] + "s" ) asp-action="Details" asp-route-id="@item.Id">
                                         <i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
                                     </a>
                                 </button>
@@ -218,7 +221,7 @@
 
 
     </div>
-</form>
+
 <!-- /store products -->
 <!-- store bottom filter -->
 <div class="store-filter clearfix">
