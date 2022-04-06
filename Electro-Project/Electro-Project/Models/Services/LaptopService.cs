@@ -37,6 +37,8 @@ namespace Electro_Project.Models.Services
             Laptop? laptop = context.Laptops
                 .Include(l => l.Manufacturer)
                 .Include(l => l.Media)
+                .Include(l => l.Reviews)
+                .ThenInclude(r => r.User)
                 .FirstOrDefault(m => m.Id == id);
 
             return laptop;

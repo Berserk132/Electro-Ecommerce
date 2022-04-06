@@ -95,6 +95,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Media/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Media/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Media/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Media/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Media/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Mobiles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9iaWxlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -125,6 +145,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Orders/ShoppingCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFNob3BwaW5nQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Partials/_Reviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1Jldmlld3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/repos/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Products/Create.cshtml]

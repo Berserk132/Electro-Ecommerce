@@ -20,6 +20,7 @@ namespace Electro_Project.Models.Context
         public DbSet<Laptop> Laptops { get; set; }
         public DbSet<Media> Medias { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Review> Reviews { get; set; }
         public DbSet<Manufacturer> Manufacturer { get; set; }
         public DbSet<RoleViewModel> RoleViewModel { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }

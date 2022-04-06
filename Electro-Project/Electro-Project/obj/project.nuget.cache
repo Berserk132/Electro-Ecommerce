@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S9ul371oY3ZjMEeqMUR04p+lH6rpre1qBgkuMHaPm9Un4PWu8QY2Nc8PDipzEQ03mCmHuPcOz7HgL7CdjU7gIQ==",
+  "dgSpecHash": "2pIgYzkon6YcsYna/EdgQ9mkIdStAK1DilP2nz4zX2KsMvprPvu+XiFv+m29RP0ZzHojxBPn9k3K4q2WYZP0NA==",
   "success": true,
   "projectFilePath": "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
   "expectedPackageFiles": [
@@ -42,8 +42,8 @@
     "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
     "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.3\\microsoft.entityframeworkcore.relational.6.0.3.nupkg.sha512",
-    "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.2\\microsoft.entityframeworkcore.sqlserver.6.0.2.nupkg.sha512",
-    "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.2\\microsoft.entityframeworkcore.tools.6.0.2.nupkg.sha512",
+    "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.3\\microsoft.entityframeworkcore.sqlserver.6.0.3.nupkg.sha512",
+    "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.3\\microsoft.entityframeworkcore.tools.6.0.3.nupkg.sha512",
     "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

@@ -40,6 +40,8 @@ namespace Electro_Project.Controllers
             var mobile = await _context.Mobiles
                 .Include(m => m.Manufacturer)
                 .Include(m => m.Media)
+                .Include(m => m.Reviews)
+                .ThenInclude(r => r.User)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (mobile == null)
             {

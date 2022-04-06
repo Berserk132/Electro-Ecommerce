@@ -1,0 +1,196 @@
+﻿@model Product
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    // calculate the starts
+    int[] stars = new int[5];
+    var totalReviews = 0;
+    var weightedAverage = 0;
+
+
+    foreach (var item in Model.Reviews)
+    {
+        switch (item.starsCount)
+        {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                stars[item.starsCount - 1] += 1;
+                break;
+        }
+
+        totalReviews += 1;
+    }
+    var counter = 1;
+    foreach (var item in stars)
+    {
+        weightedAverage += counter * item;
+        counter++;
+    }
+
+    int rating = weightedAverage / totalReviews;
+
+
+    var perc5 = ((double)stars[4]/(double)totalReviews)*100;
+    var perc4 = ((double)stars[3]/(double)totalReviews)*100;
+    var perc3 = ((double)stars[2]/(double)totalReviews)*100;
+    var perc2 = ((double)stars[1]/(double)totalReviews)*100;
+    var perc1 = ((double)stars[0]/(double)totalReviews)*100;
+}
+
+
+<div id="tab3" class="tab-pane fade in">
+    <div class="row">
+        <!-- Rating -->
+        <div class="col-md-3">
+            <div id="rating">
+                <div class="rating-avg">
+                    <span>@rating</span>
+                    <div class="rating-stars">
+                        @for (var i = 0; i < 5; i++)
+                        {
+                            @if (@rating >= (i + 1))
+                            {
+                                <i class="fa fa-star"></i>
+
+                            }
+                            else
+                            {
+                                <i class="fa fa-star-o empty"></i>
+                            }
+                        }
+                    </div>
+                </div>
+                <ul class="rating">
+                    <li>
+                        <div class="rating-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="rating-progress">
+                            <div style="width: @perc5%;"></div>
+                        </div>
+                        <span class="sum">@stars[4]</span>
+                    </li>
+                    <li>
+                        <div class="rating-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="rating-progress">
+                            <div style="width: @perc4%;"></div>
+                        </div>
+                        <span class="sum">@stars[3]</span>
+                    </li>
+                    <li>
+                        <div class="rating-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="rating-progress">
+                            <div style="width: @perc3%;"></div>
+                        </div>
+                        <span class="sum">@stars[2]</span>
+                    </li>
+                    <li>
+                        <div class="rating-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="rating-progress">
+                            <div style="width: @perc2%;"></div>
+                        </div>
+                        <span class="sum">@stars[1]</span>
+                    </li>
+                    <li>
+                        <div class="rating-stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="rating-progress">
+                            <div style="width: @perc1%;"></div>
+                        </div>
+                        <span class="sum">@stars[0]</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Rating -->
+        <!-- Reviews -->
+        <div class="col-md-6">
+            <div id="reviews">
+                <ul class="reviews">
+                    @foreach (var item in @Model.Reviews)
+                    {
+                        <li>
+                            <div class="review-heading">
+                                <h5 class="name">@item.User.UserName.Replace("@gmail.com", "")</h5>
+                                <p class="date">@item.CreatedDate</p>
+                                <div class="review-rating">
+                                    @for (var i = 0; i < 5; i++)
+                                    {
+                                        @if (item.starsCount >= (i + 1))
+                                        {
+                                            <i class="fa fa-star"></i>
+
+                                        }
+                                        else
+                                        {
+                                            <i class="fa fa-star-o empty"></i>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                            <div class="review-body" style="pa">
+                                <p>@item.ReviewBody</p>
+                            </div>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+        <!-- /Reviews -->
+        <!-- Review Form -->
+        <div class="col-md-3">
+            <div id="review-form">
+                <form asp-controller="Products" asp-action="AddReview" class="review-form">
+                    <input name="ProductId" hidden value="@Model.Id" />
+                    <textarea name="ReviewBody" class="input" placeholder="Your Review"></textarea>
+                    <div class="input-rating">
+                        <span>Your Rating: </span>
+                        <div class="stars">
+                            <input id="star5" name="starsCount" value="5" type="radio"><label for="star5"></label>
+                            <input id="star4" name="starsCount" value="4" type="radio"><label for="star4"></label>
+                            <input id="star3" name="starsCount" value="3" type="radio"><label for="star3"></label>
+                            <input id="star2" name="starsCount" value="2" type="radio"><label for="star2"></label>
+                            <input id="star1" name="starsCount" value="1" type="radio"><label for="star1"></label>
+                        </div>
+                    </div>
+                    <button class="primary-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- /Review Form -->
+    </div>
+</div>

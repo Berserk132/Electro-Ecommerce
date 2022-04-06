@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Electro_Project.Models;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace Electro_Project.Areas.Identity.Data
@@ -11,6 +12,8 @@ namespace Electro_Project.Areas.Identity.Data
         //public string Password { get; set; }
         //[Required, DataType(DataType.Password)]
         //public string ConfirmPassword { get; set; }
+
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     }
 }
