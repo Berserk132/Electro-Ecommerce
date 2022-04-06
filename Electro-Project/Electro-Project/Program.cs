@@ -50,6 +50,7 @@ builder.Services.Configure<PayPalSettings>(builder.Configuration.GetSection("Pay
 
 // Custom Services
 builder.Services.AddScoped<ILaptopService, LaptopService>();
+builder.Services.AddScoped<IMobileService, MobileService>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IManufactureService, ManufactureService>();
 builder.Services.AddScoped<IMediaService, MediaService>();
