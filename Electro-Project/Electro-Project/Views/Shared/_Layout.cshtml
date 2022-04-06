@@ -18,6 +18,7 @@
     <!-- Template Head Part-->
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <!-- Bootstrap -->
@@ -166,10 +167,12 @@
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Hot Deals</a></li>
                     <li><a href="#">Categories</a></li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Smartphones</a></li>
+                     <li> <a asp-controller="Laptops" asp-action="Index" >Laptops</a></li>
+                     <li> <a asp-controller="Mobiles" asp-action="Index" >Smartphones</a></li>
+
+                  @*   <li><a href="#">Smartphones</a></li>
                     <li><a href="#">Cameras</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Accessories</a></li>*@
                 </ul>
                 <!-- /NAV -->
             </div>
