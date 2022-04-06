@@ -59,7 +59,7 @@ namespace Electro_Project.Controllers
         // GET: Mobiles/Create
         public IActionResult Create()
         {
-            ViewData["ManufacturerID"] = new SelectList(_context.Manufacturer, "Id", "Id");
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id");
             return View();
         }
 
@@ -92,7 +92,7 @@ namespace Electro_Project.Controllers
                 #endregion
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ManufacturerID"] = new SelectList(_context.Manufacturer, "Id", "Id", mobile.ManufacturerID);
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id", mobile.ManufacturerID);
             return View(mobile);
         }
 
@@ -109,7 +109,7 @@ namespace Electro_Project.Controllers
             {
                 return NotFound();
             }
-            ViewData["ManufacturerID"] = new SelectList(_context.Manufacturer, "Id", "Id", mobile.ManufacturerID);
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id", mobile.ManufacturerID);
             return View(mobile);
         }
 
@@ -145,7 +145,7 @@ namespace Electro_Project.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ManufacturerID"] = new SelectList(_context.Manufacturer, "Id", "Id", mobile.ManufacturerID);
+            ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id", mobile.ManufacturerID);
             return View(mobile);
         }
 
