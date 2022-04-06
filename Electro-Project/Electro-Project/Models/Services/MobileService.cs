@@ -3,52 +3,52 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Electro_Project.Models.Services
 {
-    public class LaptopService : ILaptopService
+    public class MobileService : IMobileService
     {
         public ShopContext context { get; set; }
 
-        public LaptopService(ShopContext _context)
+        public MobileService(ShopContext _context)
         {
             context = _context;
         }
 
-        public void Add(Laptop _laptop)
+        public void Add(Mobile _mobile)
         {
-            context.Add(_laptop);
+            context.Add(_mobile);
             context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            Laptop cinema = context.Laptops.FirstOrDefault(x => x.Id == id);
-            context.Remove(cinema);
+            Mobile mobile = context.Mobiles.FirstOrDefault(x => x.Id == id);
+            context.Remove(mobile);
             context.SaveChanges();
         }
 
-        public IEnumerable<Laptop> GetAll()
+        public IEnumerable<Mobile> GetAll()
         {
 
-            return context.Laptops.Include(l => l.Manufacturer)
+            return context.Mobiles.Include(l => l.Manufacturer)
                 .Include(l => l.Media)
                     .ToList();
         }
 
-        public Laptop GetById(int id)
+        public Mobile GetById(int id)
         {
-            Laptop? laptop = context.Laptops
+            Mobile? mobile = context.Mobiles
                 .Include(l => l.Manufacturer)
                 .Include(l => l.Media)
                 .FirstOrDefault(m => m.Id == id);
 
-            return laptop;
+            return mobile;
         }
 
-        public Laptop Update(int id, Laptop _laptop)
+        public Mobile Update(int id, Mobile _mobile)
         {
-            context.Update(_laptop);
+            context.Update(_mobile);
             context.SaveChanges();
 
-            return _laptop;
+            return _mobile;
         }
     }
 }
