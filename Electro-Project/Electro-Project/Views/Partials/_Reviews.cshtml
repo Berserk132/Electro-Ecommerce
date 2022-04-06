@@ -27,13 +27,18 @@
         totalReviews += 1;
     }
     var counter = 1;
+    int rating = 0;
     foreach (var item in stars)
     {
         weightedAverage += counter * item;
         counter++;
     }
+    if (totalReviews != 0)
+    {
+        rating = weightedAverage / totalReviews;
+    }
 
-    int rating = weightedAverage / totalReviews;
+
 
 
     var perc5 = ((double)stars[4]/(double)totalReviews)*100;

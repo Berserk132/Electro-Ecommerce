@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2pIgYzkon6YcsYna/EdgQ9mkIdStAK1DilP2nz4zX2KsMvprPvu+XiFv+m29RP0ZzHojxBPn9k3K4q2WYZP0NA==",
+  "dgSpecHash": "mO0iW4/ScnNVkVZT2h7gMbo6+Ghx0444E7m8MszEtnFlsvwi9s1+6AU/C5IHLRfxaZNBbMNMQ1nuuhDU54uiRw==",
   "success": true,
-  "projectFilePath": "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+  "projectFilePath": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Berserk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Berserk\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
