@@ -212,7 +212,9 @@ namespace Electro_Project.Controllers
 
             }
             else if (Sort == "Popularity")
-            { }
+            {
+                matched = matched.OrderByDescending(C => C.Reviews.Count > 0 ? (C.Reviews.Sum(R=>R.starsCount))/ C.Reviews.Count : 0 ).ToList();
+            }
 
             ViewBag.Min = pricemin;
             ViewBag.Max = pricemax;

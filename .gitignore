@@ -1,0 +1,8 @@
+
+*.dll
+*.exe
+*.pdb
+*.json
+*.csproj
+*.user
+*.exe

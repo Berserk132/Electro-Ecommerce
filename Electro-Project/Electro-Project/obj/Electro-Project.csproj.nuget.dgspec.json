@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {}
+    "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {}
   },
   "projects": {
-    "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {
+    "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+        "projectUniqueName": "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
         "projectName": "Electro-Project",
-        "projectPath": "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
-        "packagesPath": "C:\\Users\\Berserk\\.nuget\\packages\\",
-        "outputPath": "D:\\repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
+        "projectPath": "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+        "packagesPath": "C:\\Users\\Omnia\\.nuget\\packages\\",
+        "outputPath": "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Berserk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Omnia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,13 +59,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.3, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -95,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

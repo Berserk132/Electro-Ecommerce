@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Identity;
 namespace Electro_Project.Models.Context
 {
     //public class ShopContext: DbContext
-    public class ShopContext: IdentityDbContext<AppUser>
+    public class ShopContext : IdentityDbContext<AppUser>
     {
 
 
-        public ShopContext(DbContextOptions<ShopContext> options) :base(options)
+        public ShopContext(DbContextOptions<ShopContext> options) : base(options)
         {
 
         }
@@ -20,10 +20,13 @@ namespace Electro_Project.Models.Context
         public DbSet<Laptop> Laptops { get; set; }
         public DbSet<Media> Medias { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Review> Reviews { get; set; }
         public DbSet<Manufacturer> Manufacturer { get; set; }
         public DbSet<RoleViewModel> RoleViewModel { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
+        public DbSet<WishList> WishLists { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -34,10 +37,11 @@ namespace Electro_Project.Models.Context
             modelBuilder.Entity<Laptop>().ToTable("Laptop");
             modelBuilder.Entity<Media>().ToTable("Media");
 
+
             base.OnModelCreating(modelBuilder); /// For IdentityDbContext Mapping
         }
 
 
-        
+
     }
 }

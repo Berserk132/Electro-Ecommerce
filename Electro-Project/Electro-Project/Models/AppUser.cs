@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Electro_Project.Models;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Electro_Project.Areas.Identity.Data
 {
@@ -12,5 +14,11 @@ namespace Electro_Project.Areas.Identity.Data
         //[Required, DataType(DataType.Password)]
         //public string ConfirmPassword { get; set; }
 
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
+
+        public int? WishListId { get; set; }
+
+        [ForeignKey("WishListId")]
+        public WishList? wishList { get; set; }   
     }
 }

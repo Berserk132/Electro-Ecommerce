@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Electro_Project.Migrations
 {
     [DbContext(typeof(ShopContext))]
-    [Migration("20220404222848_mig1")]
-    partial class mig1
+    [Migration("20220406211209_nullable")]
+    partial class nullable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,6 +76,9 @@ namespace Electro_Project.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<int?>("WishListId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -85,6 +88,8 @@ namespace Electro_Project.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("WishListId");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -237,11 +242,50 @@ namespace Electro_Project.Migrations
                     b.Property<int>("Warranty")
                         .HasColumnType("int");
 
+                    b.Property<int?>("WishListId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ManufacturerID");
 
+                    b.HasIndex("WishListId");
+
                     b.ToTable("Product", (string)null);
+                });
+
+            modelBuilder.Entity("Electro_Project.Models.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReviewBody")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("starsCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("Electro_Project.Models.RoleViewModel", b =>
@@ -284,6 +328,25 @@ namespace Electro_Project.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ShoppingCartItems");
+                });
+
+            modelBuilder.Entity("Electro_Project.Models.WishList", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("WishList");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -497,6 +560,15 @@ namespace Electro_Project.Migrations
                     b.ToTable("Mobile", (string)null);
                 });
 
+            modelBuilder.Entity("Electro_Project.Areas.Identity.Data.AppUser", b =>
+                {
+                    b.HasOne("Electro_Project.Models.WishList", "wishList")
+                        .WithMany()
+                        .HasForeignKey("WishListId");
+
+                    b.Navigation("wishList");
+                });
+
             modelBuilder.Entity("Electro_Project.Models.Media", b =>
                 {
                     b.HasOne("Electro_Project.Models.Product", null)
@@ -552,7 +624,30 @@ namespace Electro_Project.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Electro_Project.Models.WishList", null)
+                        .WithMany("Products")
+                        .HasForeignKey("WishListId");
+
                     b.Navigation("Manufacturer");
+                });
+
+            modelBuilder.Entity("Electro_Project.Models.Review", b =>
+                {
+                    b.HasOne("Electro_Project.Models.Product", "Product")
+                        .WithMany("Reviews")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Electro_Project.Areas.Identity.Data.AppUser", "User")
+                        .WithMany("Reviews")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Electro_Project.Models.ShoppingCartItem", b =>
@@ -564,6 +659,17 @@ namespace Electro_Project.Migrations
                         .IsRequired();
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("Electro_Project.Models.WishList", b =>
+                {
+                    b.HasOne("Electro_Project.Areas.Identity.Data.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -635,6 +741,11 @@ namespace Electro_Project.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Electro_Project.Areas.Identity.Data.AppUser", b =>
+                {
+                    b.Navigation("Reviews");
+                });
+
             modelBuilder.Entity("Electro_Project.Models.Order", b =>
                 {
                     b.Navigation("OrderItems");
@@ -643,6 +754,13 @@ namespace Electro_Project.Migrations
             modelBuilder.Entity("Electro_Project.Models.Product", b =>
                 {
                     b.Navigation("Media");
+
+                    b.Navigation("Reviews");
+                });
+
+            modelBuilder.Entity("Electro_Project.Models.WishList", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
