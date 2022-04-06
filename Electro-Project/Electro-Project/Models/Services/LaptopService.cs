@@ -28,7 +28,8 @@ namespace Electro_Project.Models.Services
         public IEnumerable<Laptop> GetAll()
         {
 
-            return context.Laptops
+            return context.Laptops.Include(l => l.Manufacturer)
+                .Include(l => l.Media)
                     .ToList();
         }
 
