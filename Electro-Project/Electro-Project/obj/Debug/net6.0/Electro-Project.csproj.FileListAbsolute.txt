@@ -521,7 +521,6 @@ D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\bin\Debug\net6.0\runt
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.csproj.AssemblyReference.cache
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.GeneratedMSBuildEditorConfig.editorconfig
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.AssemblyInfoInputs.cache
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.AssemblyInfo.cs
@@ -540,3 +539,4 @@ D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Elec
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\ref\Electro-Project.dll
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.pdb
 D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.genruntimeconfig.cache
+D:\repos\Electro-Ecommerce\Electro-Project\Electro-Project\obj\Debug\net6.0\Electro-Project.csproj.AssemblyReference.cache

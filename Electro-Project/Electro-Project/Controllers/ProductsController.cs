@@ -10,16 +10,27 @@ using Electro_Project.Models;
 using Electro_Project.Models.Context;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
+using Electro_Project.Models.Services;
+using Microsoft.AspNetCore.Identity;
+using Electro_Project.Areas.Identity.Data;
+using System.Security.Claims;
 
 namespace Electro_Project.Controllers
 {
     public class ProductsController : MainController
     {
         private readonly ShopContext _context;
+        private readonly IReviewService reviewService;
+        private readonly UserManager<AppUser> userManager;
 
-        public ProductsController(ShopContext context, ShoppingCart shoppingCart) : base(shoppingCart)
+        public ProductsController(ShopContext context, 
+            IReviewService _reviewService,
+            UserManager<AppUser> _userManager,
+            ShoppingCart shoppingCart) : base(shoppingCart)
         {
             _context = context;
+            reviewService = _reviewService;
+            userManager = _userManager;
         }
 
         // GET: Products
@@ -65,6 +76,27 @@ namespace Electro_Project.Controllers
             }
 
             return View(product);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddReview(Review review)
+        {
+
+            var product = _context.Products.Find(review.ProductId);
+
+            var user = await userManager.GetUserAsync(User);
+
+            review.User = user;
+            review.Product = product;
+
+            product.Reviews.Add(review);
+
+            _context.SaveChanges();
+
+
+            var controllerName = product.GetType().ToString().Split(".")[2] + "s";
+
+            return RedirectToAction("Details", controllerName, new {id = product.Id});
         }
 
         //// GET: Products/Create

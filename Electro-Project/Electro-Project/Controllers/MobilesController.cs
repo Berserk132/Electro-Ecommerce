@@ -47,7 +47,9 @@ namespace Electro_Project.Controllers
                 return NotFound();
             }
 
+
             var mobile = service.GetById(id);
+
             if (mobile == null)
             {
                 return NotFound();

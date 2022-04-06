@@ -242,6 +242,40 @@ namespace Electro_Project.Migrations
                     b.ToTable("Product", (string)null);
                 });
 
+            modelBuilder.Entity("Electro_Project.Models.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReviewBody")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("starsCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reviews");
+                });
+
             modelBuilder.Entity("Electro_Project.Models.RoleViewModel", b =>
                 {
                     b.Property<int>("Id")
@@ -553,6 +587,25 @@ namespace Electro_Project.Migrations
                     b.Navigation("Manufacturer");
                 });
 
+            modelBuilder.Entity("Electro_Project.Models.Review", b =>
+                {
+                    b.HasOne("Electro_Project.Models.Product", "Product")
+                        .WithMany("Reviews")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Electro_Project.Areas.Identity.Data.AppUser", "User")
+                        .WithMany("Reviews")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Electro_Project.Models.ShoppingCartItem", b =>
                 {
                     b.HasOne("Electro_Project.Models.Product", "Product")
@@ -633,6 +686,11 @@ namespace Electro_Project.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Electro_Project.Areas.Identity.Data.AppUser", b =>
+                {
+                    b.Navigation("Reviews");
+                });
+
             modelBuilder.Entity("Electro_Project.Models.Order", b =>
                 {
                     b.Navigation("OrderItems");
@@ -641,6 +699,8 @@ namespace Electro_Project.Migrations
             modelBuilder.Entity("Electro_Project.Models.Product", b =>
                 {
                     b.Navigation("Media");
+
+                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }
