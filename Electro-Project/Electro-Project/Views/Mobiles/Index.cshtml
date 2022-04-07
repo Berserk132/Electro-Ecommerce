@@ -1,7 +1,7 @@
-﻿@using Electro_Project.Models.Enums.Mobile
+﻿@using Electro_Project.Helpers.Pagging
+@using Electro_Project.Models.Enums.Mobile
 @using Electro_Project.Models.Enums
-@model IEnumerable<Electro_Project.Models.Mobile>
-
+@model PaginatedList<Mobile>
 @{
     ViewData["Title"] = "Index";
     List<String> OS = (List<String>)ViewBag.OS;
@@ -179,13 +179,28 @@
 <!-- /store products -->
 <!-- store bottom filter -->
 <div class="store-filter clearfix">
-    <span class="store-qty">Showing 20-100 products</span>
+    <span class="store-qty">@((Model.PageIndex - 1) * Model.TotalProducts)-@Model.TotalProducts products</span>
     <ul class="store-pagination">
-        <li class="active">1</li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+        @if (Model.PageIndex > 1)
+        {
+            <li><a asp-action="DecreamentIndex"><i class="fa fa-angle-left"></i></a></li>
+        }
+        @for(var counter = 1; counter <= Model.TotalPages; counter++)
+        {
+            if (Model.PageIndex == counter)
+            {
+                <li class="active"><a>@counter</a></li>
+            }
+            else
+            {
+                <li><a>@counter</a></li>
+            }
+
+        }
+        @if (Model.PageIndex < Model.TotalPages)
+        {
+            <li><a asp-action="IncreamentIndex"><i class="fa fa-angle-right"></i></a></li>
+        }
     </ul>
 </div>
 <!-- /store bottom filter -->

@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Microsoft.AspNetCore.Hosting;
+using Electro_Project.Helpers.Pagging;
 
 namespace Electro_Project.Controllers
 {
@@ -23,6 +24,10 @@ namespace Electro_Project.Controllers
         private ILaptopService service { get; set; }
         private IManufactureService manufacturerService { get; set; }
         private IMediaService mediaService { get; set; }
+
+        private PaginatedList<Laptop> paginatedList { get; set; }
+        private static int PageIndex { get; set; } = 1;
+        private const int PageSize = 2;
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
         public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService, IMediaService _mediaService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment) : base(shoppingCart)
@@ -36,8 +41,25 @@ namespace Electro_Project.Controllers
         // GET: Laptops
         public IActionResult Index()
         {
-            var shopContext = service.GetAll();
-            return View(shopContext.ToList());
+            var laptops = service.GetAll();
+
+
+            paginatedList =  PaginatedList<Laptop>.Create(laptops, PageIndex, PageSize);
+            return View(paginatedList);
+        }
+
+        public IActionResult IncreamentIndex()
+        {
+            PageIndex += 1;
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DecreamentIndex()
+        {
+            PageIndex -= 1;
+
+            return RedirectToAction("Index");
         }
 
         // GET: Laptops/Details/5

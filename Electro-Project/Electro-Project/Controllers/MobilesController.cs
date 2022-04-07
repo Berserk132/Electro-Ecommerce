@@ -11,6 +11,7 @@ using Electro_Project.Models.Context;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Electro_Project.Models.Services;
+using Electro_Project.Helpers.Pagging;
 
 namespace Electro_Project.Controllers
 {
@@ -22,6 +23,10 @@ namespace Electro_Project.Controllers
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
         private IMediaService mediaService { get; set; }
+
+        private PaginatedList<Mobile> paginatedList { get; set; }
+        private static int PageIndex { get; set; } = 1;
+        private const int PageSize = 2;
 
         public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService) : base(shoppingCart)
         {
@@ -35,8 +40,25 @@ namespace Electro_Project.Controllers
         // GET: Mobiles
         public IActionResult Index()
         {
-            var shopContext = service.GetAll();
-            return View(shopContext.ToList());
+            var mobiles = service.GetAll();
+
+
+            paginatedList = PaginatedList<Mobile>.Create(mobiles, PageIndex, PageSize);
+            return View(paginatedList);
+        }
+
+        public IActionResult IncreamentIndex()
+        {
+            PageIndex += 1;
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DecreamentIndex()
+        {
+            PageIndex -= 1;
+
+            return RedirectToAction("Index");
         }
 
         // GET: Mobiles/Details/5
