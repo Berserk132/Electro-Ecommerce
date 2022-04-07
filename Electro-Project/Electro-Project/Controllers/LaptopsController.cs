@@ -77,20 +77,10 @@ namespace Electro_Project.Controllers
             {
 
                 service.Add(laptop);
-
                 #region ImageToFile
-                string uploads = Path.Combine(hostingEnvironment.WebRootPath, "img");
                 foreach (IFormFile file in files)
                 {
-                    if (file.Length > 0)
-                    {
-                        string filePath = Path.Combine(uploads, file.FileName);
-                        using (Stream fileStream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await file.CopyToAsync(fileStream);
-                        }
-                        mediaService.Add(new Media() { ImageURL = file.FileName, ProductID = laptop.Id });
-                    }
+                    mediaService.Add(new Media() { ImageURL = file.FileName, ProductID = laptop.Id }, file);
                 }
                 #endregion
 
@@ -122,7 +112,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Ram,RamType,GPU,OS,Color,ScreenSize,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Laptop laptop)
+        public async Task<IActionResult> Edit(int id, [Bind("Ram,RamType,GPU,OS,Color,ScreenSize,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Laptop laptop, List<IFormFile> files)
         {
             if (id != laptop.Id)
             {
@@ -134,6 +124,10 @@ namespace Electro_Project.Controllers
                 try
                 {
                     service.Update(id, laptop);
+                    foreach (IFormFile file in files)
+                    {
+                        mediaService.Add(new Media() { ImageURL = file.FileName, ProductID = laptop.Id }, file);
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -213,7 +207,7 @@ namespace Electro_Project.Controllers
             }
             else if (Sort == "Popularity")
             {
-                matched = matched.OrderByDescending(C => C.Reviews.Count > 0 ? (C.Reviews.Sum(R=>R.starsCount))/ C.Reviews.Count : 0 ).ToList();
+                matched = matched.OrderByDescending(C => C.Reviews.Count > 0 ? (C.Reviews.Sum(R => R.starsCount)) / C.Reviews.Count : 0).ToList();
             }
 
             ViewBag.Min = pricemin;
@@ -227,6 +221,6 @@ namespace Electro_Project.Controllers
             return View("Index", matched);
         }
 
-      
+
     }
 }

@@ -1,0 +1,17 @@
+﻿@model Product
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+
+@foreach (var img in Model.Media)
+{
+    <div class="img-wrap">
+        <a asp-action="DeleteImg" asp-controller="Products" asp-route-id="@img.Id"><span class="close">&times;</span></a>
+        <img src="~/img/@img.ImageURL" width="200" height="200">
+    </div>
+}

@@ -9,5 +9,6 @@ namespace Electro_Project.Models
 
         [ForeignKey("Product")]
         public int ProductID { get; set; }
+
     }
 }

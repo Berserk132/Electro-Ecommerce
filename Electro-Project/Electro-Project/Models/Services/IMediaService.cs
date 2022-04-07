@@ -7,7 +7,7 @@
 
         Media GetById(int id);
 
-        void Add(Media _media);
+        void Add(Media _media, IFormFile file);
 
         Media Update(int id, Media _media);
 
