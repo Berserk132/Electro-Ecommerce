@@ -47,11 +47,16 @@ namespace Electro_Project.Controllers
         }
          public async Task<IActionResult> Search(string search, string category)
         {
-            ViewBag.products = _context.Products.Include(p => p.Manufacturer).Include(p => p.Media).Where(p => p.Name.Contains(search)).ToList();
+            var products = _context.Products.Include(p => p.Manufacturer).Include(p => p.Media).Where(p => p.Name.Contains(search)).ToList();
+
+            var controllerName = category;
+            if (category == null)
+                controllerName = "Laptops";
+
             //ViewBag.mobilesContext = _context.Mobiles.Include(p => p.Manufacturer);
             //ViewBag.laptopsContext = _context.Laptops.Include(p => p.Manufacturer);
             //return View(await shopContext.ToListAsync());
-            return View();
+            return RedirectToAction("Index", controllerName ,products);
         }
 
 

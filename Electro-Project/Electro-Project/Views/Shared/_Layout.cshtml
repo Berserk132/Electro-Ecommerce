@@ -85,7 +85,7 @@
                                     <option value="Mobiles">Mobiles</option>
                                 </select>
                                 <input class="input" name="search" placeholder="Search here">
-                                <button class="search-btn">Search</button>
+                                <button type="submit" class="search-btn">Search</button>
                             </form>
                         </div>
                     </div>
@@ -98,9 +98,11 @@
                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                     <i class="fa fa-shopping-cart"></i>
                                     <span>Your Cart</span>
-                                    <div class="qty">@{
+                                    <div class="qty">
+                                        @{
                                             @shoppingCart.ShoppingCart.ShoppingCartItems.Count()
-                                        }</div>
+                                        }
+                                    </div>
                                 </a>
                                 <div class="cart-dropdown">
                                     <div class="cart-list">
@@ -114,9 +116,13 @@
                                                     </div>
                                                     <div class="product-body">
                                                         <h3 class="product-name"><a href="#">@item.Product.Name</a></h3>
-                                                        <h4 class="product-price"><span class="qty">@{
+                                                        <h4 class="product-price">
+                                                            <span class="qty">
+                                                                @{
                                                                     @item.Amount
-                                                                }x</span>$@item.Product.Price</h4>
+                                                                }x
+                                                            </span>$@item.Product.Price
+                                                        </h4>
                                                     </div>
                                                     <button class="delete"><i class="fa fa-close"></i></button>
                                                 </div>
@@ -125,9 +131,11 @@
 
                                     </div>
                                     <div class="cart-summary">
-                                        <small>@{
+                                        <small>
+                                            @{
                                                 @shoppingCart.ShoppingCart.ShoppingCartItems.Count()
-                                            } Item(s) selected</small>
+                                            } Item(s) selected
+                                        </small>
                                         <h5>SUBTOTAL: $@shoppingCart.ShoppingCartTotal</h5>
                                     </div>
                                     <div class="cart-btns">
@@ -164,10 +172,9 @@
             <div id="responsive-nav">
                 <!-- NAV -->
                 <ul class="main-nav nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Categories</a></li>
-                     <li> <a asp-controller="Laptops" asp-action="Index" >Laptops</a></li>
-                     <li> <a asp-controller="Mobiles" asp-action="Index" >Smartphones</a></li>
+                    <li> <a asp-controller="Products" asp-action="Index">Home</a></li>
+                    <li> <a asp-controller="Laptops" asp-action="Index">Laptops</a></li>
+                    <li> <a asp-controller="Mobiles" asp-action="Index">Smartphones</a></li>
                 </ul>
                 <!-- /NAV -->
             </div>
@@ -195,9 +202,9 @@
                             <h3 class="footer-title">About Us</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
                             <ul class="footer-links">
-                                <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                               @* <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
                                 <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>*@
                             </ul>
                         </div>
                     </div>
