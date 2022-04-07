@@ -1,4 +1,5 @@
-﻿@model Electro_Project.Models.Laptop
+﻿@using Electro_Project.Models.Enums
+@model Electro_Project.Models.Laptop
 
 @{
     ViewData["Title"] = "Edit";
@@ -10,36 +11,36 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Ram" class="control-label"></label>
-                <select asp-for="Ram" class="form-control"></select>
+                <select asp-for="Ram" asp-items="Html.GetEnumSelectList<LaptopRam>()" class="form-control"></select>
                 <span asp-validation-for="Ram" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="RamType" class="control-label"></label>
-                <select asp-for="RamType" class="form-control"></select>
+                <select asp-for="RamType" asp-items="Html.GetEnumSelectList<LaptopRamType>()" class="form-control"></select>
                 <span asp-validation-for="RamType" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="GPU" class="control-label"></label>
-                <select asp-for="GPU" class="form-control"></select>
+                <select asp-for="GPU" asp-items="Html.GetEnumSelectList<LaptopGPU>()" class="form-control"></select>
                 <span asp-validation-for="GPU" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="OS" class="control-label"></label>
-                <select asp-for="OS" class="form-control"></select>
+                <select asp-for="OS" asp-items="Html.GetEnumSelectList<LaptopOS>()" class="form-control"></select>
                 <span asp-validation-for="OS" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Color" class="control-label"></label>
-                <select asp-for="Color" class="form-control"></select>
+                <select asp-for="Color" asp-items="Html.GetEnumSelectList<Color>()" class="form-control"></select>
                 <span asp-validation-for="Color" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ScreenSize" class="control-label"></label>
-                <select asp-for="ScreenSize" class="form-control"></select>
+                <select asp-for="ScreenSize" asp-items="Html.GetEnumSelectList<LaptopScreen>()" class="form-control"></select>
                 <span asp-validation-for="ScreenSize" class="text-danger"></span>
             </div>
             <div class="form-group">
