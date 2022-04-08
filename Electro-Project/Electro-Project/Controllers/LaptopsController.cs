@@ -29,18 +29,12 @@ namespace Electro_Project.Controllers
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
 
-        private readonly UserManager<AppUser> userManager;
-        ClaimsIdentity claimsIdentity { get; set; }
-        private IWishListService wishListService { get; set; }
-
-        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService, IMediaService _mediaService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart)
+        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService, IMediaService _mediaService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             service = _service;
             manufacturerService = _manufacturerService;
             mediaService = _mediaService;
             hostingEnvironment = _hostingEnvironment;
-            userManager = _userManager;
-            wishListService = _wishListService;
         }
 
         // GET: Laptops

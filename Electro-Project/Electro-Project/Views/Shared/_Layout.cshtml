@@ -2,6 +2,7 @@
 
 @{
     var shoppingCart = (ShoppingCartVM)ViewBag.ShoppingCartVM;
+    var WishList = (List<int>)ViewBag.WishList;
 }
 
 <!DOCTYPE html>
@@ -93,6 +94,15 @@
                     <!-- ACCOUNT -->
                     <div class="col-md-3 clearfix">
                         <div class="header-ctn">
+                            <!-- Wishlist -->
+                            <div>
+                                <a asp-action="WishList" asp-controller="Products">
+                                    <i class="fa fa-heart-o"></i>
+                                    <span>Your Wishlist</span>
+                                    <div class="qty">@WishList.Count</div>
+                                </a>
+                            </div>
+                            <!-- /Wishlist -->
                             <!-- Cart -->
                             <div class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -202,9 +212,9 @@
                             <h3 class="footer-title">About Us</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
                             <ul class="footer-links">
-                               @* <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-                                <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>*@
+                                @* <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                                    <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>*@
                             </ul>
                         </div>
                     </div>

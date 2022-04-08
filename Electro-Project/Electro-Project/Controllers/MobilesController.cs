@@ -26,31 +26,22 @@ namespace Electro_Project.Controllers
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
         private IMediaService mediaService { get; set; }
-        private IWishListService wishListService { get; set; }
 
-        private readonly UserManager<AppUser> userManager;
-        ClaimsIdentity claimsIdentity { get; set; }
 
-        public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart)
+        public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             service = _mobileService;
             manufacturerService = _manufacturerService;
             hostingEnvironment = _hostingEnvironment;
             mediaService = _mediaService;
-            userManager = _userManager;
-            wishListService = _wishListService;
+
         }
 
         // GET: Mobiles
         public async Task<IActionResult> Index()
         {
             var shopContext = service.GetAll();
-            var user = await userManager.GetUserAsync(User);
-
-            if (user != null)
-                ViewBag.WishList = (wishListService.GetByUserId(user.Id)).Select(w => w.PID).ToList();
-            else ViewBag.WishList = new List<int>();
-
+   
             return View(shopContext.ToList());
         }
 

@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace Electro_Project.Controllers
 {
     // [Authorize(Roles = "Admin")]
-    public class RoleController : MainController
+    public class RoleController : Controller
     {
         public RoleManager<IdentityRole> RoleManager { get; }
 
-        public RoleController(RoleManager<IdentityRole> _roleManager, ShoppingCart shoppingCart) : base(shoppingCart)
+        public RoleController(RoleManager<IdentityRole> _roleManager, ShoppingCart shoppingCart) 
         {
             RoleManager = _roleManager;
         }

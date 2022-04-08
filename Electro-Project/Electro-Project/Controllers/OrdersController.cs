@@ -20,19 +20,16 @@ namespace Electro_Project.Controllers
     {
         private readonly ShopContext context;
         private readonly ShoppingCart shoppingCart;
-        private readonly UserManager<AppUser> userManager;
         private readonly IOrdersService ordersService;
         private readonly IHttpClientFactory clientFactory;
 
         public OrdersController(ShopContext _context,
             ShoppingCart _shoppingCart,
-            UserManager<AppUser> _userManager,
             IOrdersService _ordersService,
-            IHttpClientFactory _clientFactory) : base(_shoppingCart)
+            IHttpClientFactory _clientFactory, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(_shoppingCart, _userManager, _wishListService)
         {
             context = _context;
             shoppingCart = _shoppingCart;
-            userManager = _userManager;
             ordersService = _ordersService;
             clientFactory = _clientFactory;
         }

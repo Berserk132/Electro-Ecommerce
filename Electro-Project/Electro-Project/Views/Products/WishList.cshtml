@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Electro_Project.WishList_Product>
+
+@{
+    ViewData["Title"] = "WishList";
+}
+
+<h2 style="margin-top:20px">WishList</h2>
+<table class="table">
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-controller="Products" asp-route-id="@item.PID">
+                        <div class="product-widget">
+                            <div class="product-img">
+                                <img src="~/img/@(item.Product.Media.FirstOrDefault() != null ? item.Product.Media.FirstOrDefault().ImageURL : "noImg.jpg" )" alt="">
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">@item.Product.GetType().ToString().Split(".")[2]</p>
+                                <h3 class="product-name">
+
+                                    @Html.DisplayFor(modelItem => item.Product.Name)
+                                </h3>
+                                <h4 class="product-price">$@item.Product.Price</h4>
+                            </div>
+
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a asp-action="RemoveFromWishList" asp-controller="Products" asp-route-id="@item.PID"><i class="fa fa-heart" style="font-size:x-large;margin-top:35px;"></i><span class="tooltipp">  remove from wishlist</span></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -11,6 +11,9 @@ using Electro_Project.Models.Context;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Microsoft.AspNetCore.Authorization;
+using Electro_Project.Models.Services;
+using Microsoft.AspNetCore.Identity;
+using Electro_Project.Areas.Identity.Data;
 
 namespace Electro_Project.Controllers
 {
@@ -18,7 +21,7 @@ namespace Electro_Project.Controllers
     {
         private readonly ShopContext _context;
 
-        public MediaController(ShopContext context, ShoppingCart shoppingCart) : base(shoppingCart)
+        public MediaController(ShopContext context, ShoppingCart shoppingCart, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             _context = context;
         }

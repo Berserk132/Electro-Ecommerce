@@ -12,6 +12,8 @@ using Electro_Project.Models.Services;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Electro_Project.Areas.Identity.Data;
 
 namespace Electro_Project.Controllers
 {
@@ -20,7 +22,7 @@ namespace Electro_Project.Controllers
     {
         private readonly IManufactureService service;
 
-        public ManufacturersController(IManufactureService _service, ShoppingCart shoppingCart) : base(shoppingCart)
+        public ManufacturersController(IManufactureService _service, ShoppingCart shoppingCart, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             service = _service;
         }

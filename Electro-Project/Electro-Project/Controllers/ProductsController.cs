@@ -20,34 +20,22 @@ namespace Electro_Project.Controllers
 {
     public class ProductsController : MainController
     {
-        private readonly ShopContext _context;
         private IProductService productService;
         private readonly IReviewService reviewService;
         private IMediaService mediaService { get; set; }
-        private IWishListService wishListService { get; set; }
 
-        private readonly UserManager<AppUser> userManager;
-        ClaimsIdentity claimsIdentity { get; set; }
-
-        public ProductsController(ShopContext context, IReviewService _reviewService, IProductService _productService, UserManager<AppUser> _userManager, IMediaService _mediaService, ShoppingCart shoppingCart, IWishListService _wishListService) : base(shoppingCart)
+        public ProductsController(IReviewService _reviewService, IProductService _productService, IMediaService _mediaService, ShoppingCart shoppingCart, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
-            _context = context;
             reviewService = _reviewService;
-            userManager = _userManager;
             mediaService = _mediaService;
             productService = _productService;
-            wishListService = _wishListService;
         }
 
         // GET: Products
         public async Task<IActionResult> Index()
         {
             ViewBag.products = productService.GetAll();
-            var user = await userManager.GetUserAsync(User);
 
-            if (user != null)
-                ViewBag.WishList = (wishListService.GetByUserId(user.Id)).Select(w => w.PID).ToList();
-            else ViewBag.WishList = new List<int>();
 
             return View();
         }
@@ -68,33 +56,11 @@ namespace Electro_Project.Controllers
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            /////////////////////////////////////////////////////////////////
-            var laptop = _context.Laptops.FirstOrDefault(p => p.Id == id);
-            if (laptop == null)
-            {
-                var mobile = _context.Mobiles.FirstOrDefault(p => p.Id == id);
-                if (mobile != null)
-                {
-                    return View(mobile);
-                }
-                ///error
-            }
-            else
-                return View(laptop);
-            //////////////////////////////////////////////////////////////////
-
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var product = productService.GetById(id);
-            if (product == null)
-            {
-                return NotFound();
-            }
 
-            return View(product);
+            var controllerName = product.GetType().ToString().Split(".")[2] + "s";
+
+            return RedirectToAction("Details", controllerName, new { id = product.Id });
         }
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteImg(int id)
@@ -161,6 +127,19 @@ namespace Electro_Project.Controllers
 
             return Redirect(HttpContext.Request.Headers["Referer"]);
         }
+
+        [Authorize]
+        public IActionResult WishList(int id)
+        {
+            claimsIdentity = User.Identity as ClaimsIdentity;
+            string UserID = claimsIdentity.Claims.First().ToString().Split("nameidentifier: ")[1];
+
+
+            var wishLists = wishListService.GetByUserId(UserID).ToList();
+
+            return View("WishList",wishLists);
+        }
+
 
         // GET: Laptops/Delete/5
         [Authorize(Roles = "Admin")]

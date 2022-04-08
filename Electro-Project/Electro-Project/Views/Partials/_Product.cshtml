@@ -38,7 +38,7 @@
                 }
                 else
                 {
-                    <button class="add-to-wishlist"><a asp-action="RemoveFromWishList" asp-controller="Products" asp-route-id="@Model.Id"><i class="fa fa-heart"></i><span class="tooltipp">remove to wishlist</span></a></button>
+                    <button class="add-to-wishlist"><a asp-action="RemoveFromWishList" asp-controller="Products" asp-route-id="@Model.Id"><i class="fa fa-heart"></i><span class="tooltipp">remove from wishlist</span></a></button>
                 }
 
                 @if (this.User.IsInRole("Admin"))

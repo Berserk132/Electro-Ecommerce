@@ -1,4 +1,6 @@
 ﻿using Electro_Project.Models.Context;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Electro_Project.Models.Services
 {
@@ -34,10 +36,10 @@ namespace Electro_Project.Models.Services
         }
         public IEnumerable<WishList_Product> GetByUserId(string id)
         {
-            IEnumerable<WishList_Product> wishList = context.WishLists_Products
+            return context.WishLists_Products
+                .Include(w => w.Product)
+                .ThenInclude(W=>W.Media)
                 .Where(m => m.UserID == id);
-            
-            return wishList;
         }
     }
 }

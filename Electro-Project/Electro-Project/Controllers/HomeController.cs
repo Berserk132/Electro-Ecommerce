@@ -1,6 +1,9 @@
-﻿using Electro_Project.Controllers.BaseController;
+﻿using Electro_Project.Areas.Identity.Data;
+using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models;
 using Electro_Project.Models.Cart;
+using Electro_Project.Models.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -10,7 +13,7 @@ namespace Electro_Project.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, ShoppingCart shoppingCart) : base(shoppingCart)
+        public HomeController(ILogger<HomeController> logger, ShoppingCart shoppingCart, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             _logger = logger;
         }
