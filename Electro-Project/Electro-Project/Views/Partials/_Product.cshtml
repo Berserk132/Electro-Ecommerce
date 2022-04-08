@@ -1,10 +1,12 @@
-﻿@model Product
+﻿@using Electro_Project
+@using Electro_Project.Models
+@model Product
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-
+    var WishList = (List<int>)ViewBag.WishList;
 }
 
 <div class="col-md-4 col-xs-6">
@@ -29,10 +31,20 @@
                 <i class="fa fa-star"></i>
             </div>
             <div class="product-btns">
-                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                @if (this.User.IsInRole("Admin")){
-                <button class="add-to-compare"><a asp-action="Edit" asp-route-id="@Model.Id"> <i class="fa fa-pencil"></i><span class="tooltipp">edit</span></a></button>
-                <button class="add-to-compare"><a asp-action="Delete" asp-route-id="@Model.Id"> <i class="fa fa-trash"></i><span class="tooltipp">delete</span></a></button>
+
+                @if (WishList.Count == 0 || !WishList.Contains(@Model.Id))
+                {
+                    <button class="add-to-wishlist"><a asp-action="AddToWishList" asp-controller="Products" asp-route-id="@Model.Id"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></a></button>
+                }
+                else
+                {
+                    <button class="add-to-wishlist"><a asp-action="RemoveFromWishList" asp-controller="Products" asp-route-id="@Model.Id"><i class="fa fa-heart"></i><span class="tooltipp">remove to wishlist</span></a></button>
+                }
+
+                @if (this.User.IsInRole("Admin"))
+                {
+                    <button class="add-to-compare"><a asp-action="Edit" asp-route-id="@Model.Id"> <i class="fa fa-pencil"></i><span class="tooltipp">edit</span></a></button>
+                    <button class="add-to-compare"><a asp-action="Delete" asp-route-id="@Model.Id"> <i class="fa fa-trash"></i><span class="tooltipp">delete</span></a></button>
                 }
                 <button class="quick-view">
                     <a asp-controller=@(Model.GetType().ToString().Split(".")[2] + "s" )
@@ -43,7 +55,7 @@
             </div>
         </div>
         <div class="add-to-cart">
-            <a asp-controller="Orders" asp-action="AddModelToShoppingCart" asp-route-id="@Model.Id"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
+            <a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@Model.Id"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
         </div>
     </div>
 </div>

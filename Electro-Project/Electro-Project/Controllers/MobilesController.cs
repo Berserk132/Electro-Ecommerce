@@ -12,6 +12,9 @@ using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Electro_Project.Models.Services;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Electro_Project.Areas.Identity.Data;
+using System.Security.Claims;
 
 namespace Electro_Project.Controllers
 {
@@ -23,20 +26,31 @@ namespace Electro_Project.Controllers
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
         private IMediaService mediaService { get; set; }
+        private IWishListService wishListService { get; set; }
 
-        public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService) : base(shoppingCart)
+        private readonly UserManager<AppUser> userManager;
+        ClaimsIdentity claimsIdentity { get; set; }
+
+        public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart)
         {
             service = _mobileService;
             manufacturerService = _manufacturerService;
             hostingEnvironment = _hostingEnvironment;
             mediaService = _mediaService;
-
+            userManager = _userManager;
+            wishListService = _wishListService;
         }
 
         // GET: Mobiles
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var shopContext = service.GetAll();
+            var user = await userManager.GetUserAsync(User);
+
+            if (user != null)
+                ViewBag.WishList = (wishListService.GetByUserId(user.Id)).Select(w => w.PID).ToList();
+            else ViewBag.WishList = new List<int>();
+
             return View(shopContext.ToList());
         }
 

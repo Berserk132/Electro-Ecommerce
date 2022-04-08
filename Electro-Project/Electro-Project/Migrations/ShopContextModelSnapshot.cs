@@ -342,6 +342,21 @@ namespace Electro_Project.Migrations
                     b.ToTable("WishLists");
                 });
 
+            modelBuilder.Entity("Electro_Project.WishList_Product", b =>
+                {
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("PID")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserID", "PID");
+
+                    b.HasIndex("PID");
+
+                    b.ToTable("WishLists_Products");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -674,6 +689,25 @@ namespace Electro_Project.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Electro_Project.WishList_Product", b =>
+                {
+                    b.HasOne("Electro_Project.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("PID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Electro_Project.Areas.Identity.Data.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

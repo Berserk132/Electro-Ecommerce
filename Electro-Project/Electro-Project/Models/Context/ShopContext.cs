@@ -25,7 +25,7 @@ namespace Electro_Project.Models.Context
         public DbSet<RoleViewModel> RoleViewModel { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
-        public DbSet<WishList> WishLists { get; set; }
+        public DbSet<WishList_Product> WishLists_Products { get; set; }
 
 
 
@@ -37,6 +37,9 @@ namespace Electro_Project.Models.Context
             modelBuilder.Entity<Laptop>().ToTable("Laptop");
             modelBuilder.Entity<Media>().ToTable("Media");
 
+
+            modelBuilder.Entity<WishList_Product>()
+                .HasKey(V => new { V.UserID, V.PID });
 
             base.OnModelCreating(modelBuilder); /// For IdentityDbContext Mapping
         }

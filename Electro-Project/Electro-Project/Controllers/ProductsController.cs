@@ -23,23 +23,31 @@ namespace Electro_Project.Controllers
         private readonly ShopContext _context;
         private IProductService productService;
         private readonly IReviewService reviewService;
-        private readonly UserManager<AppUser> userManager;
         private IMediaService mediaService { get; set; }
+        private IWishListService wishListService { get; set; }
 
+        private readonly UserManager<AppUser> userManager;
+        ClaimsIdentity claimsIdentity { get; set; }
 
-        public ProductsController(ShopContext context, IReviewService _reviewService, IProductService _productService, UserManager<AppUser> _userManager, IMediaService _mediaService, ShoppingCart shoppingCart) : base(shoppingCart)
+        public ProductsController(ShopContext context, IReviewService _reviewService, IProductService _productService, UserManager<AppUser> _userManager, IMediaService _mediaService, ShoppingCart shoppingCart, IWishListService _wishListService) : base(shoppingCart)
         {
             _context = context;
             reviewService = _reviewService;
             userManager = _userManager;
             mediaService = _mediaService;
             productService = _productService;
+            wishListService = _wishListService;
         }
 
         // GET: Products
         public async Task<IActionResult> Index()
         {
             ViewBag.products = productService.GetAll();
+            var user = await userManager.GetUserAsync(User);
+
+            if (user != null)
+                ViewBag.WishList = (wishListService.GetByUserId(user.Id)).Select(w => w.PID).ToList();
+            else ViewBag.WishList = new List<int>();
 
             return View();
         }
@@ -74,7 +82,7 @@ namespace Electro_Project.Controllers
             else
                 return View(laptop);
             //////////////////////////////////////////////////////////////////
-           
+
             if (id == null)
             {
                 return NotFound();
@@ -96,7 +104,6 @@ namespace Electro_Project.Controllers
 
             var prodcut = productService.GetById(id);
 
-
             var controllerName = prodcut.GetType().ToString().Split(".")[2] + "s";
             return RedirectToAction("Edit", controllerName, new { id = prodcut.Id });
         }
@@ -116,11 +123,43 @@ namespace Electro_Project.Controllers
 
             product.Reviews.Add(review);
 
-
-
             var controllerName = product.GetType().ToString().Split(".")[2] + "s";
 
             return RedirectToAction("Details", controllerName, new { id = product.Id });
+        }
+        [Authorize]
+        public IActionResult AddToWishList(int id)
+        {
+            claimsIdentity = User.Identity as ClaimsIdentity;
+            string UID = claimsIdentity.Claims.First().ToString().Split("nameidentifier: ")[1];
+
+            wishListService.AddToWishList(id, UID);
+
+            Product product = productService.GetById(id);
+
+            var url = HttpContext.Request.Headers["Referer"];
+            if (url[0].Contains("Identity"))
+                return RedirectToAction("Index");
+
+
+            return Redirect(HttpContext.Request.Headers["Referer"]);
+        }
+        [Authorize]
+        public IActionResult RemoveFromWishList(int id)
+        {
+            claimsIdentity = User.Identity as ClaimsIdentity;
+            string UID = claimsIdentity.Claims.First().ToString().Split("nameidentifier: ")[1];
+
+            wishListService.RemoveFromWishList(id, UID);
+
+            Product product = productService.GetById(id);
+
+            var url = HttpContext.Request.Headers["Referer"];
+            if (url[0].Contains("Identity"))
+                return RedirectToAction("Index");
+
+
+            return Redirect(HttpContext.Request.Headers["Referer"]);
         }
 
         // GET: Laptops/Delete/5
@@ -153,6 +192,15 @@ namespace Electro_Project.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //// GET: Products/Edit/5
+        public async Task<IActionResult> Edit(int id)
+        {
+            Product product = productService.GetById(id);
+
+            string controller = product.GetType().ToString().Split(".")[2] + "s";
+
+            return RedirectToAction("Edit", controller, new { area = "" });
+        }
 
 
         #region commented
