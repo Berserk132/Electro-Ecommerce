@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "u/OYRVQwwVw770f3eDzLy+3j/t9KTIwrb7OvUITpmts=",
-=======
-  "Hash": "MxxyOEJurRh+9/LmP9TWMqC6WOtzNyTHZZUxqbJJ80g=",
->>>>>>> Sheblyat
+  "Hash": "jrPd74KXCwGmpwFDxbtjelEEgAISgn+MAlUZuridq6g=",
   "Source": "Electro-Project",
   "BasePath": "_content/Electro-Project",
   "Mode": "Default",
@@ -14,21 +10,17 @@
     {
       "Name": "Electro-Project\\wwwroot",
       "Source": "Electro-Project",
-<<<<<<< HEAD
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\css\\site.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\css\\site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -39,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\css\\site.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\favicon.ico",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\favicon.ico",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -56,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\favicon.ico"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\js\\site.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\js\\site.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -73,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\js\\site.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -90,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -107,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -124,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -141,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -158,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -175,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -192,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -209,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -226,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -243,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -260,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -277,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -294,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -311,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -328,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -345,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -362,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -379,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -396,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -413,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -430,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -447,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -464,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -481,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -498,13 +490,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -515,13 +507,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -532,13 +524,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -549,13 +541,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -566,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -583,13 +575,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -600,13 +592,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -617,13 +609,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -634,13 +626,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -651,13 +643,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -668,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -685,13 +677,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -702,13 +694,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -719,13 +711,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -736,13 +728,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -753,13 +745,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -770,13 +762,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -787,13 +779,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -804,13 +796,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -821,13 +813,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -838,13 +830,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -855,13 +847,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -872,13 +864,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -889,13 +881,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -906,13 +898,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -923,13 +915,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -940,13 +932,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -957,13 +949,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -974,13 +966,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -991,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1008,13 +1000,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1025,13 +1017,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1042,20 +1034,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Omnia\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\Berserk\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Electro-Project.styles.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Electro-Project.styles.css",
       "SourceId": "Electro-Project",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Electro-Project.styles.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "Electro-Project.styles.css",
       "AssetKind": "All",
@@ -1066,23 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Electro-Project.styles.css"
+      "OriginalItemSpec": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Electro-Project.styles.css"
     },
     {
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Electro-Project.bundle.scp.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Electro-Project.bundle.scp.css",
       "SourceId": "Electro-Project",
       "SourceType": "Computed",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Electro-Project.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Electro-Project.bundle.scp.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "Electro-Project.bundle.scp.css",
       "AssetKind": "All",
@@ -1093,23 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Electro-Project.bundle.scp.css"
+      "OriginalItemSpec": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Electro-Project.bundle.scp.css"
     },
     {
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Electro-Project.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\bootstrap.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1123,17 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\font-awesome.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\font-awesome.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\font-awesome.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/font-awesome.min.css",
       "AssetKind": "All",
@@ -1147,17 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\nouislider.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\nouislider.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\nouislider.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/nouislider.min.css",
       "AssetKind": "All",
@@ -1171,17 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\nouislider.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\site.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\site.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\site.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1195,17 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\slick.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\slick.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\slick.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/slick.css",
       "AssetKind": "All",
@@ -1219,17 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slick.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\slick-theme.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\slick-theme.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\slick-theme.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/slick-theme.css",
       "AssetKind": "All",
@@ -1243,17 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slick-theme.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\style.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\css\\style.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\css\\style.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -1267,17 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\favicon.ico",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\favicon.ico",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\favicon.ico",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1291,17 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\FontAwesome.otf",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\FontAwesome.otf",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\FontAwesome.otf",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/FontAwesome.otf",
       "AssetKind": "All",
@@ -1315,17 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\FontAwesome.otf"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.eot",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/fontawesome-webfont.eot",
       "AssetKind": "All",
@@ -1339,17 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.eot"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.svg",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.svg",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/fontawesome-webfont.svg",
       "AssetKind": "All",
@@ -1363,17 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.svg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.ttf",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/fontawesome-webfont.ttf",
       "AssetKind": "All",
@@ -1387,17 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.ttf"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.woff",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/fontawesome-webfont.woff",
       "AssetKind": "All",
@@ -1411,17 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\fontawesome-webfont.woff2",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/fontawesome-webfont.woff2",
       "AssetKind": "All",
@@ -1435,17 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.eot",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.eot",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.eot",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/slick.eot",
       "AssetKind": "All",
@@ -1459,17 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.eot"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.svg",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.svg",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.svg",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/slick.svg",
       "AssetKind": "All",
@@ -1483,17 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.svg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.ttf",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.ttf",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.ttf",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/slick.ttf",
       "AssetKind": "All",
@@ -1507,17 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.ttf"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.woff",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.woff",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\fonts\\slick.woff",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "fonts/slick.woff",
       "AssetKind": "All",
@@ -1531,17 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\slick.woff"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\hotdeal.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\hotdeal.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\hotdeal.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/hotdeal.png",
       "AssetKind": "All",
@@ -1555,17 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\img\\hotdeal.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\logo.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\logo.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\logo.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/logo.png",
       "AssetKind": "All",
@@ -1579,17 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\noImg.jpg",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\noImg.jpg",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\noImg.jpg",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/noImg.jpg",
       "AssetKind": "All",
@@ -1603,17 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\img\\noImg.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product01.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product01.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product01.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product01.png",
       "AssetKind": "All",
@@ -1627,17 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product01.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product02.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product02.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product02.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product02.png",
       "AssetKind": "All",
@@ -1651,17 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product02.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product03.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product03.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product03.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product03.png",
       "AssetKind": "All",
@@ -1675,17 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product03.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product04.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product04.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product04.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product04.png",
       "AssetKind": "All",
@@ -1699,17 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product04.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product05.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product05.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product05.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product05.png",
       "AssetKind": "All",
@@ -1723,17 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product05.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product06.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product06.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product06.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product06.png",
       "AssetKind": "All",
@@ -1747,17 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product06.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product07.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product07.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product07.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product07.png",
       "AssetKind": "All",
@@ -1771,17 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product07.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product08.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product08.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product08.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product08.png",
       "AssetKind": "All",
@@ -1795,17 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product08.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product09.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\product09.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\product09.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/product09.png",
       "AssetKind": "All",
@@ -1819,17 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product09.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop01.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop01.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop01.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/shop01.png",
       "AssetKind": "All",
@@ -1843,17 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop01.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop02.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop02.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop02.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/shop02.png",
       "AssetKind": "All",
@@ -1867,17 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop02.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop03.png",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop03.png",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\img\\shop03.png",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "img/shop03.png",
       "AssetKind": "All",
@@ -1891,17 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\img\\shop03.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\bootstrap.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1915,17 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\jquery.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\jquery.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\jquery.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
@@ -1939,17 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\jquery.zoom.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\jquery.zoom.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\jquery.zoom.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/jquery.zoom.min.js",
       "AssetKind": "All",
@@ -1963,17 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.zoom.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\main.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\main.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\main.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -1987,17 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\nouislider.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\nouislider.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\nouislider.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/nouislider.min.js",
       "AssetKind": "All",
@@ -2011,17 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\js\\nouislider.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\site.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\site.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\site.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2035,17 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\slick.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\js\\slick.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\js\\slick.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "js/slick.min.js",
       "AssetKind": "All",
@@ -2059,17 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\js\\slick.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2083,17 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2107,17 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2131,17 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2155,17 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2179,17 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2203,17 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2227,17 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2251,17 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2275,17 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2299,17 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2323,17 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2347,17 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2371,17 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2395,17 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2419,17 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2443,17 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2467,17 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2491,17 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2515,17 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2539,17 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2563,17 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2587,17 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2611,17 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2635,17 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2659,17 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2683,17 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2707,17 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2731,17 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2755,17 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2779,17 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2803,17 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2827,17 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2851,17 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2875,17 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2899,17 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2923,17 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2947,17 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2971,17 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2995,17 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -3019,17 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -3043,17 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3067,17 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3091,17 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3115,17 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3139,17 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3163,17 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3187,17 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3211,17 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3235,17 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3259,17 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3283,17 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3307,17 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3331,17 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3355,17 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3379,17 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3403,17 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Electro-Project",
       "SourceType": "Discovered",
-      "ContentRoot": "G:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "Electro-Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Omnia\\Desktop\\Electro-Project\\Electro-Project\\wwwroot\\",
->>>>>>> Sheblyat
+      "ContentRoot": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\wwwroot\\",
       "BasePath": "_content/Electro-Project",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

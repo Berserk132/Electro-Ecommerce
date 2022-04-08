@@ -202,9 +202,9 @@ namespace Electro_Project.Controllers
         List<Mobile> matched;
         public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> OS, List<string> Ram, List<string> Color,string Sort)
         {
-            var shopContext = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
+            var mobiles = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
             matched = new List<Mobile>();
-            foreach (var item in shopContext)
+            foreach (var item in mobiles)
             {
                 if ((OS.Count > 0 ? OS : new List<string>() { item.OS.ToString() }).Contains(item.OS.ToString()))
                     if ((Ram.Count > 0 ? Ram : new List<string>() { item.Ram.ToString() }).Contains(item.Ram.ToString()))
@@ -231,7 +231,10 @@ namespace Electro_Project.Controllers
             ViewBag.OS = OS;
             ViewBag.Ram = Ram;
             ViewBag.Color = Color;
-            return View("index", matched);
+
+            paginatedList = PaginatedList<Mobile>.Create(mobiles, PageIndex, PageSize);
+
+            return View("index", paginatedList);
         }
 
      

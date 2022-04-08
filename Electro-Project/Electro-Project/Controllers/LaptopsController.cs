@@ -204,10 +204,10 @@ namespace Electro_Project.Controllers
         [HttpPost]
         public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> GPU, List<string> OS, List<string> Ram, List<string> RamType, List<string> Screen, List<string> Color, string Sort)
         {
-            var shopContext = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
+            var laptops = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
             List<Laptop> matched = new List<Laptop>();
             //Filter
-            foreach (var item in shopContext)
+            foreach (var item in laptops)
             {
                 if ((OS.Count > 0 ? OS : new List<string>() { item.OS.ToString() }).Contains(item.OS.ToString()))
                     if ((GPU.Count > 0 ? GPU : new List<string>() { item.GPU.ToString() }).Contains(item.GPU.ToString()))
@@ -240,7 +240,11 @@ namespace Electro_Project.Controllers
             ViewBag.Color = Color;
             ViewBag.Screen = Screen;
             ViewBag.RamType = RamType;
-            return View("Index", matched);
+
+            paginatedList = PaginatedList<Laptop>.Create(laptops, PageIndex, PageSize);
+
+
+            return View("Index", paginatedList);
         }
 
 
