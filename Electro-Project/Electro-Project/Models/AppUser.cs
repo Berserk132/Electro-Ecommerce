@@ -14,6 +14,8 @@ namespace Electro_Project.Areas.Identity.Data
         //[Required, DataType(DataType.Password)]
         //public string ConfirmPassword { get; set; }
 
+        public string Neckname { get; set; }
+
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
         public int? WishListId { get; set; }
