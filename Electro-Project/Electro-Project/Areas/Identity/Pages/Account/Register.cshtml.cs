@@ -35,6 +35,8 @@ namespace Electro_Project.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+
+            _userManager.Options.SignIn.RequireConfirmedAccount = true;
         }
 
         [BindProperty]
@@ -89,8 +91,11 @@ namespace Electro_Project.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    //await _emailSender.SendEmailAsync(Input.Email, "Confirm Your Email",
+                    //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                    await _emailSender.SendEmailAsync(Input.Email, Input.Email,
+                        HtmlEncoder.Default.Encode(callbackUrl));
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {

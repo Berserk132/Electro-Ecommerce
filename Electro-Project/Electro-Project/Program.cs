@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Identity;
 using Electro_Project.Areas.Identity.Data;
 using Electro_Project.Models.Cart;
 using Electro_Project.Models.PaymentSettings;
+using Electro_Project.Models.Mail.Settings;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ShopContext>(options =>
@@ -61,6 +63,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddSession();
 builder.Services.AddHttpClient();
+
+
+// add mail services
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+//builder.Services.AddTransient<IMailService, MailService>();
+builder.Services.AddTransient<IEmailSender, MailService>();
+
 
 var app = builder.Build();
 
