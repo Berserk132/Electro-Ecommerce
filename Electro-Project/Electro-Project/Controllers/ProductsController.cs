@@ -22,10 +22,6 @@ namespace Electro_Project.Controllers
         private readonly ShopContext _context;
         private readonly IReviewService reviewService;
         private readonly UserManager<AppUser> userManager;
-
-        public ProductsController(ShopContext context, 
-            IReviewService _reviewService,
-            UserManager<AppUser> _userManager,
         private IMediaService mediaService { get; set; }
 
 
@@ -49,7 +45,7 @@ namespace Electro_Project.Controllers
             //return View(await shopContext.ToListAsync());
             return View();
         }
-         public async Task<IActionResult> Search(string search, string category)
+        public async Task<IActionResult> Search(string search, string category)
         {
             var products = _context.Products.Include(p => p.Manufacturer).Include(p => p.Media).Where(p => p.Name.Contains(search)).ToList();
 
@@ -60,7 +56,7 @@ namespace Electro_Project.Controllers
             //ViewBag.mobilesContext = _context.Mobiles.Include(p => p.Manufacturer);
             //ViewBag.laptopsContext = _context.Laptops.Include(p => p.Manufacturer);
             //return View(await shopContext.ToListAsync());
-            return RedirectToAction("Index", controllerName ,products);
+            return RedirectToAction("Index", controllerName, products);
         }
 
 
@@ -97,7 +93,7 @@ namespace Electro_Project.Controllers
 
             return View(product);
         }
-        
+
         public async Task<IActionResult> DeleteImg(int id)
         {
             var media = mediaService.GetById(id);
@@ -109,6 +105,7 @@ namespace Electro_Project.Controllers
             var controllerName = prodcut.GetType().ToString().Split(".")[2] + "s";
             return RedirectToAction("Edit", controllerName, new { id = prodcut.Id });
         }
+
 
 
         [HttpPost]
@@ -131,29 +128,7 @@ namespace Electro_Project.Controllers
 
             return RedirectToAction("Details", controllerName, new { id = product.Id });
         }
-
-
-        [HttpPost]
-        public async Task<IActionResult> AddReview(Review review)
-        {
-
-            var product = _context.Products.Find(review.ProductId);
-
-            var user = await userManager.GetUserAsync(User);
-
-            review.User = user;
-            review.Product = product;
-
-            product.Reviews.Add(review);
-
-            _context.SaveChanges();
-
-
-            var controllerName = product.GetType().ToString().Split(".")[2] + "s";
-
-            return RedirectToAction("Details", controllerName, new {id = product.Id});
-        }
-
+        #region Commented
         //// GET: Products/Create
         //public IActionResult Create()
         //{
@@ -265,5 +240,7 @@ namespace Electro_Project.Controllers
         //{
         //    return _context.Products.Any(e => e.Id == id);
         //}
+
+        #endregion
     }
 }
