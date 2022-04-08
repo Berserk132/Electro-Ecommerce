@@ -1,7 +1,10 @@
-﻿@model Electro_Project.Models.Mobile
+﻿@using Electro_Project.Models.Enums
+@using Electro_Project.Models.Enums.Mobile
+@model Electro_Project.Models.Mobile
 
 @{
     ViewData["Title"] = "Edit";
+
 }
 
 <h2>Edit</h2>
@@ -10,11 +13,11 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Ram" class="control-label"></label>
-                <select asp-for="Ram" class="form-control"></select>
+                <select asp-for="Ram" asp-items="Html.GetEnumSelectList<MobileRam>()" class="form-control"></select>
                 <span asp-validation-for="Ram" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -24,12 +27,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="OS" class="control-label"></label>
-                <select asp-for="OS" class="form-control"></select>
+                <select asp-for="OS" asp-items="Html.GetEnumSelectList<MobileOS>()" class="form-control"></select>
                 <span asp-validation-for="OS" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Color" class="control-label"></label>
-                <select asp-for="Color" class="form-control"></select>
+                <select asp-for="Color" asp-items="Html.GetEnumSelectList<Color>()" class="form-control"></select>
                 <span asp-validation-for="Color" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -88,6 +91,15 @@
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
+            @await Html.PartialAsync("~/Views/Partials/_MediaEdit.cshtml", Model)
+
+
+            <div class="form-group">
+                <label class="control-label"></label>
+                <input class="form-control" id="files" name="files" type="file" multiple accept="image/*" />
+                <span class="text-danger"></span>
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
@@ -100,5 +112,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }

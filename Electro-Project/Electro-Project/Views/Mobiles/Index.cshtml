@@ -9,11 +9,12 @@
     List<String> Ram = (List<String>)ViewBag.Ram;
 }
 
-<h2>Index</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="row">
+    <div class="col-md-12 text-center ">
+        <a asp-action="Create" class="form-control" style="margin:30px">Create New <i class="fa fa-plus"></i></a>
+    </div>
+</div>
 
 <form asp-action="Filter">
     <div id="aside" class="col-md-3">
@@ -144,7 +145,7 @@
                         </div>
                     </div>
                     <div class="product-body">
-                        <p class="product-category">Category</p>
+                        <p class="product-category">@item.Name</p>
                         <h3 class="product-name"><a href="#">@item.Name</a></h3>
                         <h4 class="product-price">@item.Price <del class="product-old-price"> @(@item.Price - 2000)</del></h4>
                         <div class="product-rating">
@@ -156,7 +157,7 @@
                         </div>
                         <div class="product-btns">
                             <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
+                            <button class="add-to-compare"><a asp-action="Edit" asp-route-id="@item.Id"> <i class="fa fa-pencil"></i><span class="tooltipp">edit</span></a></button>
                             <button class="quick-view">
                                 <a asp-controller=@(item.GetType().ToString().Split(".")[2] + "s" )
                                asp-action="Details" asp-route-id="@item.Id">

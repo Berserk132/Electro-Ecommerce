@@ -100,18 +100,9 @@ namespace Electro_Project.Controllers
                 service.Add(mobile);
 
                 #region ImageToFile
-                string uploads = Path.Combine(hostingEnvironment.WebRootPath, "img");
                 foreach (IFormFile file in files)
                 {
-                    if (file.Length > 0)
-                    {
-                        string filePath = Path.Combine(uploads, file.FileName);
-                        using (Stream fileStream = new FileStream(filePath, FileMode.Create))
-                        {
-                            await file.CopyToAsync(fileStream);
-                        }
-                        mediaService.Add(new Media() { ImageURL = file.FileName, ProductID = mobile.Id });
-                    }
+                    mediaService.Add(new Media() { ImageURL = file.FileName, ProductID = mobile.Id }, file);
                 }
                 #endregion
                 return RedirectToAction(nameof(Index));
@@ -142,7 +133,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Ram,GPU,OS,Color,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Mobile mobile)
+        public async Task<IActionResult> Edit(int id, [Bind("Ram,GPU,OS,Color,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Mobile mobile, List<IFormFile> files)
         {
             if (id != mobile.Id)
             {
@@ -154,7 +145,10 @@ namespace Electro_Project.Controllers
                 try
                 {
                     service.Update(id, mobile);
-                    await _context.SaveChangesAsync();
+                    foreach (IFormFile file in files)
+                    {
+                        mediaService.Add(new Media() { ImageURL = file.FileName, ProductID = mobile.Id }, file);
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -228,7 +222,9 @@ namespace Electro_Project.Controllers
 
             }
             else if (Sort == "Popularity")
-            { }
+            {
+                matched = matched.OrderByDescending(C => C.Reviews.Count > 0 ? (C.Reviews.Sum(R => R.starsCount)) / C.Reviews.Count : 0).ToList();
+            }
 
             ViewBag.Min = pricemin;
             ViewBag.Max = pricemax;

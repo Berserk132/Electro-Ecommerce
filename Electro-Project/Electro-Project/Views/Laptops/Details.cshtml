@@ -22,7 +22,14 @@
                         <div class="product-preview">
                             <img src="~/img/@item.ImageURL" alt="">
                         </div>
+                    {
+                          <img src="~/img/noImg.jpg" alt="">
                     }
+                    @foreach (var item in Model.Media)
+                        {
+                                <img src="~/img/@item.ImageURL" alt="">
+                            </div>
+                        }
                 </div>
             </div>
             <!-- /Product main img -->
@@ -50,7 +57,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
                         </div>
-                        <a class="review-link" href="#">10 Review(s) | Add your review</a>
+                        <a class="review-link" href="#">(@Model.Reviews.Count) Review(s) | Add your review</a>
                     </div>
                     <div>
                         <h3 class="product-price">@Model.Price<del class="product-old-price">  @(@Model.Price - 2000)</del></h3>
@@ -71,7 +78,7 @@
                         <div class="qty-label">
                             Qty
                             <div class="input-number">
-                                <input type="number">
+                                <input type="number" value="1">
                                 <span class="qty-up">+</span>
                                 <span class="qty-down">-</span>
                             </div>

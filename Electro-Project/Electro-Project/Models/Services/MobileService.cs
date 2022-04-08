@@ -28,8 +28,11 @@ namespace Electro_Project.Models.Services
         public IEnumerable<Mobile> GetAll()
         {
 
-            return context.Mobiles.Include(l => l.Manufacturer)
+            return context.Mobiles
+                .Include(l => l.Manufacturer)
                 .Include(l => l.Media)
+                .Include(l => l.Reviews)
+                .ThenInclude(r => r.User)
                     .ToList();
         }
 

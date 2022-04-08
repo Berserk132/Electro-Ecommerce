@@ -73,6 +73,12 @@
                 <div id="product-main-img">
                     @foreach (var item in Model.Media)
                     {
+                    @if (Model.Media.Count == 0)
+                    {
+                        <img src="~/img/noImg.jpg" alt="">
+                    }
+                    @foreach (var item in Model.Media)
+                    {
                         <div class="product-preview">
                             <img src="~/img/@item.ImageURL" alt="">
                         </div>
@@ -104,7 +110,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
                         </div>
-                        <a class="review-link" href="#">10 Review(s) | Add your review</a>
+                        <a class="review-link" href="#">(@Model.Reviews.Count) Review(s) | Add your review</a>
                     </div>
                     <div>
                         <h3 class="product-price">@Model.Price<del class="product-old-price">  @(@Model.Price - 2000)</del></h3>
@@ -125,7 +131,7 @@
                         <div class="qty-label">
                             Qty
                             <div class="input-number">
-                                <input type="number">
+                                <input type="number" value="1">
                                 <span class="qty-up">+</span>
                                 <span class="qty-down">-</span>
                             </div>
@@ -161,7 +167,7 @@
                     <ul class="tab-nav">
                         <li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
                         <li><a data-toggle="tab" href="#tab2">Details</a></li>
-                        <li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
+                        <li><a data-toggle="tab" href="#tab3">Reviews (@Model.Reviews.Count)</a></li>
                     </ul>
                     <!-- /product tab nav -->
                     <!-- product tab content -->

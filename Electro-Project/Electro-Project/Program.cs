@@ -52,6 +52,8 @@ builder.Services.AddScoped<IOrdersService, OrdersService>();
 builder.Services.AddScoped<IManufactureService, ManufactureService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<IMediaService, MediaService>();
+builder.Services.AddScoped<IWishListService, WishListService>();
+
 
 
 // Add services to the container.

@@ -4,6 +4,7 @@ using Electro_Project.Models.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Electro_Project.Migrations
 {
     [DbContext(typeof(ShopContext))]
-    partial class ShopContextModelSnapshot : ModelSnapshot
+    [Migration("20220406211209_nullable")]
+    partial class nullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -240,9 +242,14 @@ namespace Electro_Project.Migrations
                     b.Property<int>("Warranty")
                         .HasColumnType("int");
 
+                    b.Property<int?>("WishListId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ManufacturerID");
+
+                    b.HasIndex("WishListId");
 
                     b.ToTable("Product", (string)null);
                 });
@@ -339,7 +346,7 @@ namespace Electro_Project.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("WishLists");
+                    b.ToTable("WishList");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -477,21 +484,6 @@ namespace Electro_Project.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("ProductWishList", b =>
-                {
-                    b.Property<int>("ProductsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("wishListsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductsId", "wishListsId");
-
-                    b.HasIndex("wishListsId");
-
-                    b.ToTable("ProductWishList");
                 });
 
             modelBuilder.Entity("Electro_Project.Models.Laptop", b =>
@@ -632,6 +624,10 @@ namespace Electro_Project.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Electro_Project.Models.WishList", null)
+                        .WithMany("Products")
+                        .HasForeignKey("WishListId");
+
                     b.Navigation("Manufacturer");
                 });
 
@@ -727,21 +723,6 @@ namespace Electro_Project.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ProductWishList", b =>
-                {
-                    b.HasOne("Electro_Project.Models.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Electro_Project.Models.WishList", null)
-                        .WithMany()
-                        .HasForeignKey("wishListsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Electro_Project.Models.Laptop", b =>
                 {
                     b.HasOne("Electro_Project.Models.Product", null)
@@ -775,6 +756,11 @@ namespace Electro_Project.Migrations
                     b.Navigation("Media");
 
                     b.Navigation("Reviews");
+                });
+
+            modelBuilder.Entity("Electro_Project.Models.WishList", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

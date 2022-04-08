@@ -5,17 +5,40 @@ namespace Electro_Project.Models.Services
 {
     public class MediaService : IMediaService
     {
+        IWebHostEnvironment hostingEnvironment;
+
+
         public ShopContext context { get; set; }
 
-        public MediaService(ShopContext _context)
+        public MediaService(ShopContext _context, IWebHostEnvironment _hostingEnvironment)
         {
             context = _context;
+            hostingEnvironment = _hostingEnvironment;
         }
 
-        public void Add(Media _media)
+        public void Add(Media _media, IFormFile file)
         {
             context.Add(_media);
+            this.SaveToFile(file);
+
             context.SaveChanges();
+        }
+
+        public async void SaveToFile(IFormFile file)
+        {
+            #region ImageToFile
+            string uploads = Path.Combine(hostingEnvironment.WebRootPath, "img");
+
+            if (file.Length > 0)
+            {
+                string filePath = Path.Combine(uploads, file.FileName);
+                using (Stream fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(fileStream);
+                }
+            }
+
+            #endregion
         }
 
         public void Delete(int id)

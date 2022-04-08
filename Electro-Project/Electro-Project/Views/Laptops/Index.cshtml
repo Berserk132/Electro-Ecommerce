@@ -10,12 +10,15 @@
     List<String> Ram = (List<String>)ViewBag.Ram;
     List<String> RamType = (List<String>)ViewBag.RamType;
 }
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="row"> 
+    <div class="col-md-12 text-center ">
+        <a asp-action="Create" class="form-control" style="margin:30px" >Create New <i class="fa fa-plus"></i></a>
 
+    </div>
+</div>
 <form asp-action="Filter">
-    <div id="aside" class="col-md-3">
+    <div class="col-md-3">
+
         <button type="submit" class="form-control"><i class="fa fa-filter"></i> Filter</button>
 
         <!-- Price Range -->
@@ -24,11 +27,10 @@
             <div class="price-filter">
                 <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal">
                     <div class="noUi-base">
-                      
                     </div>
                 </div>
                 <div class="input-number price-min">
-                    <input id="price-min" name="pricemin" type="number"  value="@(ViewBag.Min ?? 0.0)"> 
+                    <input id="price-min" name="pricemin" type="number" value="@(ViewBag.Min ?? 0.0)">
                     <span class="qty-up">+</span>
                     <span class="qty-down">-</span>
                 </div>
@@ -144,19 +146,19 @@
         <!-- /SCREEN -->
         <!-- /aside Widget -->
     </div>
-        <!-- store top filter -->
-      <div  class="col-md-9">
+    <!-- store top filter -->
+    <div class="col-md-9">
 
         <div class="store-filter clearfix">
             <div class="store-sort">
                 <label>
                     Sort By:
-                        <select class="input-select" name="Sort" onchange="this.form.submit()">
-                            <option value="Choose Sorting" disabled selected>Choose Sorting</option>
-                            <option value="Low Price to High">Low Price to High</option>
-                            <option value="High Price to Low">High Price to Low</option>
-                            <option value="Popularity">Popularity</option>
-                        </select>
+                    <select class="input-select" name="Sort" onchange="this.form.submit()">
+                        <option value="Choose Sorting" disabled selected>Choose Sorting</option>
+                        <option value="Low Price to High">Low Price to High</option>
+                        <option value="High Price to Low">High Price to Low</option>
+                        <option value="Popularity">Popularity</option>
+                    </select>
                 </label>
 
                 <label>
@@ -168,60 +170,59 @@
                 </label>
             </div>
             <ul class="store-grid">
-                <li class="active"><i class="fa fa-th"></i></li>
-                <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+             
             </ul>
         </div>
-        </div>
-        </form>
-        <!-- /store top filter -->
-        <!-- store products -->
-    <div id="store" class="col-md-9">
-        <div class="row">
-            @foreach (var item in @Model)
-            {
-                <div class="col-md-4 col-xs-6">
+    </div>
+</form>
+<!-- /store top filter -->
+<!-- store products -->
+<div id="store" class="col-md-9">
+    <div class="row">
+        @foreach (var item in @Model)
+        {
+            <div class="col-md-4 col-xs-6">
 
-                    <div class="product">
-                        <div class="product-img">
-                            <img src="~/img/@(item.Media.FirstOrDefault() != null ? item.Media.FirstOrDefault().ImageURL : "noImg.jpg" )" alt="">
-                            <div class="product-label">
-                                <span class="sale">-30%</span>
-                                <span class="new">NEW</span>
-                            </div>
-                        </div>
-                        <div class="product-body">
-                            <p class="product-category">Category</p>
-                            <h3 class="product-name"><a href="#">@item.Name</a></h3>
-                            <h4 class="product-price">@item.Price <del class="product-old-price"> @(@item.Price - 2000)</del></h4>
-                            <div class="product-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-btns">
-                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                <button class="quick-view">
-                                   <a asp-controller=@(item.GetType().ToString().Split(".")[2] + "s" ) asp-action="Details" asp-route-id="@item.Id">
-                                        <i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="add-to-cart">
-                            <a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
+                <div class="product">
+                    <div class="product-img">
+                        <img src="~/img/@(item.Media.FirstOrDefault() != null ? item.Media.FirstOrDefault().ImageURL : "noImg.jpg" )" alt="" width="230" height="230">
+                        <div class="product-label">
+                            <span class="sale">-30%</span>
+                            <span class="new">NEW</span>
                         </div>
                     </div>
+                    <div class="product-body">
+                        <p class="product-category">@item.Name</p>
+                        <h3 class="product-name"><a href="#">@item.Name</a></h3>
+                        <h4 class="product-price">@item.Price <del class="product-old-price"> @(@item.Price - 2000)</del></h4>
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="product-btns">
+                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                            <button class="add-to-compare"><a asp-action="Edit" asp-route-id="@item.Id"> <i class="fa fa-pencil"></i><span class="tooltipp">edit</span></a></button>
+                            <button class="quick-view">
+                                <a asp-controller=@(item.GetType().ToString().Split(".")[2] + "s" ) asp-action="Details" asp-route-id="@item.Id">
+                                    <i class="fa fa-eye"></i><span class="tooltipp">quick view</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="add-to-cart">
+                        <a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@item.Id"><button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></a>
+                    </div>
                 </div>
-            }
-        </div>
-        <!-- /product -->
-
-
+            </div>
+        }
     </div>
+    <!-- /product -->
+
+
+</div>
 
 <!-- /store products -->
 <!-- store bottom filter -->

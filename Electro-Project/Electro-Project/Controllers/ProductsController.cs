@@ -26,11 +26,17 @@ namespace Electro_Project.Controllers
         public ProductsController(ShopContext context, 
             IReviewService _reviewService,
             UserManager<AppUser> _userManager,
+
+
+        public ProductsController(ShopContext context,
+            IReviewService _reviewService,
+            UserManager<AppUser> _userManager, IMediaService _mediaService,
             ShoppingCart shoppingCart) : base(shoppingCart)
         {
             _context = context;
             reviewService = _reviewService;
             userManager = _userManager;
+            mediaService = _mediaService;
         }
 
         // GET: Products
@@ -42,6 +48,21 @@ namespace Electro_Project.Controllers
             //return View(await shopContext.ToListAsync());
             return View();
         }
+         public async Task<IActionResult> Search(string search, string category)
+        {
+            var products = _context.Products.Include(p => p.Manufacturer).Include(p => p.Media).Where(p => p.Name.Contains(search)).ToList();
+
+            var controllerName = category;
+            if (category == null)
+                controllerName = "Laptops";
+
+            //ViewBag.mobilesContext = _context.Mobiles.Include(p => p.Manufacturer);
+            //ViewBag.laptopsContext = _context.Laptops.Include(p => p.Manufacturer);
+            //return View(await shopContext.ToListAsync());
+            return RedirectToAction("Index", controllerName ,products);
+        }
+
+
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -60,8 +81,6 @@ namespace Electro_Project.Controllers
             else
                 return View(laptop);
 
-
-
             if (id == null)
             {
                 return NotFound();
@@ -77,6 +96,41 @@ namespace Electro_Project.Controllers
 
             return View(product);
         }
+        
+        public async Task<IActionResult> DeleteImg(int id)
+        {
+            var media = mediaService.GetById(id);
+            mediaService.Delete(id);
+
+            var prodcut = _context.Products.Find(media.ProductID);
+
+
+            var controllerName = prodcut.GetType().ToString().Split(".")[2] + "s";
+            return RedirectToAction("Edit", controllerName, new { id = prodcut.Id });
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> AddReview(Review review)
+        {
+
+            var product = _context.Products.Find(review.ProductId);
+
+            var user = await userManager.GetUserAsync(User);
+
+            review.User = user;
+            review.Product = product;
+
+            product.Reviews.Add(review);
+
+            _context.SaveChanges();
+
+
+            var controllerName = product.GetType().ToString().Split(".")[2] + "s";
+
+            return RedirectToAction("Details", controllerName, new { id = product.Id });
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> AddReview(Review review)
