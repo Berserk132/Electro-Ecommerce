@@ -26,6 +26,7 @@ namespace Electro_Project.Controllers
         public ProductsController(ShopContext context, 
             IReviewService _reviewService,
             UserManager<AppUser> _userManager,
+        private IMediaService mediaService { get; set; }
 
 
         public ProductsController(ShopContext context,

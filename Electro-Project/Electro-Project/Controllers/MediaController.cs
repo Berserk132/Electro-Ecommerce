@@ -150,6 +150,7 @@ namespace Electro_Project.Controllers
             _context.Medias.Remove(media);
             await _context.SaveChangesAsync();
 
+
             return RedirectToAction(nameof(Index));
         }
 

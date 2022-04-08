@@ -22,11 +22,13 @@
                         <div class="product-preview">
                             <img src="~/img/@item.ImageURL" alt="">
                         </div>
+                    @if (Model.Media.Count == 0)
                     {
                           <img src="~/img/noImg.jpg" alt="">
                     }
                     @foreach (var item in Model.Media)
                         {
+                            <div class="product-preview">
                                 <img src="~/img/@item.ImageURL" alt="">
                             </div>
                         }

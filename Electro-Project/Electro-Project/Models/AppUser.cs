@@ -16,5 +16,9 @@ namespace Electro_Project.Areas.Identity.Data
 
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
+        public int? WishListId { get; set; }
+
+        [ForeignKey("WishListId")]
+        public WishList? wishList { get; set; }   
     }
 }

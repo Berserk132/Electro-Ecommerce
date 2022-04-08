@@ -29,6 +29,7 @@ namespace Electro_Project.Models
         public string? Description { get; set; }
 
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
+        public ICollection<WishList> wishLists { get; set; } = new List<WishList>();
 
 
     }
