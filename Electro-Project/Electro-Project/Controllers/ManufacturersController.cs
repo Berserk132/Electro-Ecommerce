@@ -11,9 +11,11 @@ using Electro_Project.Models.Context;
 using Electro_Project.Models.Services;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Electro_Project.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ManufacturersController : MainController
     {
         private readonly IManufactureService service;
@@ -24,12 +26,14 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Manufacturers
+
         public IActionResult Index()
         {
             return View(service.GetAll().ToList());
         }
 
         // GET: Manufacturers/Details/5
+
         public IActionResult Details(int id)
         {
             if (id == null)
@@ -48,6 +52,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Manufacturers/Create
+
         public IActionResult Create()
         {
             return View();
@@ -58,6 +63,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> Create([Bind("Id,Name")] Manufacturer manufacturer)
         {
             if (ModelState.IsValid)
@@ -69,6 +75,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Manufacturers/Edit/5
+
         public IActionResult Edit(int id)
         {
             if (id == null)

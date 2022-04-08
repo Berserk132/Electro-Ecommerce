@@ -11,6 +11,7 @@ using Electro_Project.Models.Context;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Electro_Project.Models.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Electro_Project.Controllers
 {
@@ -59,6 +60,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id");
@@ -70,6 +72,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Ram,GPU,OS,Color,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Mobile mobile, List<IFormFile> files)
         {
             if (ModelState.IsValid)
@@ -90,6 +93,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
@@ -111,6 +115,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Ram,GPU,OS,Color,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Mobile mobile, List<IFormFile> files)
         {
             if (id != mobile.Id)
@@ -146,6 +151,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             if (id == null)
@@ -166,6 +172,7 @@ namespace Electro_Project.Controllers
         // POST: Mobiles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             service.Delete(id);
@@ -178,7 +185,7 @@ namespace Electro_Project.Controllers
         }
 
         List<Mobile> matched;
-        public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> OS, List<string> Ram, List<string> Color,string Sort)
+        public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> OS, List<string> Ram, List<string> Color, string Sort)
         {
             var shopContext = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
             matched = new List<Mobile>();
@@ -212,6 +219,6 @@ namespace Electro_Project.Controllers
             return View("index", matched);
         }
 
-     
+
     }
 }

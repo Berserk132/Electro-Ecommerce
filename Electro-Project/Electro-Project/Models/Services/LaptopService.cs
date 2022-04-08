@@ -20,8 +20,8 @@ namespace Electro_Project.Models.Services
 
         public void Delete(int id)
         {
-            Laptop cinema = context.Laptops.FirstOrDefault(x => x.Id == id);
-            context.Remove(cinema);
+            Laptop laptop = context.Laptops.FirstOrDefault(x => x.Id == id);
+            context.Remove(laptop);
             context.SaveChanges();
         }
 

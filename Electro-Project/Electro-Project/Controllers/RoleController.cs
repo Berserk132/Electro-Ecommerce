@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Electro_Project.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    // [Authorize(Roles = "Admin")]
     public class RoleController : MainController
     {
         public RoleManager<IdentityRole> RoleManager { get; }
@@ -28,20 +28,20 @@ namespace Electro_Project.Controllers
         }
 
         [HttpPost]
-        public async Task <IActionResult> AddRole(RoleViewModel roleViewModel)
+        public async Task<IActionResult> AddRole(RoleViewModel roleViewModel)
         {
             if (ModelState.IsValid)
             {
-                IdentityRole identityRole = new IdentityRole() { Name = roleViewModel.RoleName};
+                IdentityRole identityRole = new IdentityRole() { Name = roleViewModel.RoleName };
                 IdentityResult result = await RoleManager.CreateAsync(identityRole);
 
                 if (result.Succeeded)
-                    return RedirectToAction("index","products");
+                    return RedirectToAction("index", "products");
                 else
                 {
                     foreach (var item in result.Errors)
                     {
-                        ModelState.AddModelError("",item.Description);
+                        ModelState.AddModelError("", item.Description);
                     }
                 }
             }

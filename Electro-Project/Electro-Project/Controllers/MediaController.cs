@@ -10,6 +10,7 @@ using Electro_Project.Models;
 using Electro_Project.Models.Context;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Electro_Project.Controllers
 {
@@ -47,6 +48,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Media/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             // get all products
@@ -61,6 +63,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,ImageURL,ProductID")] Media media)
         {
             if (ModelState.IsValid)
@@ -73,6 +76,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Media/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -93,6 +97,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ImageURL,ProductID")] Media media)
         {
             if (id != media.Id)
@@ -124,6 +129,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Media/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,6 +150,7 @@ namespace Electro_Project.Controllers
         // POST: Media/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var media = await _context.Medias.FindAsync(id);
