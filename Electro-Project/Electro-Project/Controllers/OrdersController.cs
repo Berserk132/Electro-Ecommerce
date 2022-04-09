@@ -5,6 +5,7 @@ using Electro_Project.Models.Cart;
 using Electro_Project.Models.Context;
 using Electro_Project.Models.Services;
 using Electro_Project.Models.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -14,28 +15,26 @@ using System.Text.Json;
 
 namespace Electro_Project.Controllers
 {
+    [Authorize]
     public class OrdersController : MainController
     {
         private readonly ShopContext context;
         private readonly ShoppingCart shoppingCart;
-        private readonly UserManager<AppUser> userManager;
         private readonly IOrdersService ordersService;
         private readonly IHttpClientFactory clientFactory;
 
-        public OrdersController(ShopContext _context, 
-            ShoppingCart _shoppingCart, 
-            UserManager<AppUser> _userManager,
+        public OrdersController(ShopContext _context,
+            ShoppingCart _shoppingCart,
             IOrdersService _ordersService,
-            IHttpClientFactory _clientFactory) : base(_shoppingCart)
+            IHttpClientFactory _clientFactory, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(_shoppingCart, _userManager, _wishListService)
         {
             context = _context;
             shoppingCart = _shoppingCart;
-            userManager = _userManager;
             ordersService = _ordersService;
             clientFactory = _clientFactory;
         }
 
-
+        
         public IActionResult Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -45,7 +44,7 @@ namespace Electro_Project.Controllers
 
             return View(orders);
         }
-
+        
         public async Task<IActionResult> FinalizeOrder()
         {
 
@@ -63,6 +62,7 @@ namespace Electro_Project.Controllers
 
 
         [HttpPost]
+        
         public async Task<IActionResult> FinalizeOrder(Address address)
         {
 
@@ -78,7 +78,7 @@ namespace Electro_Project.Controllers
 
             return RedirectToAction(nameof(ShoppingCart));
         }
-
+        
         public IActionResult ShoppingCart()
         {
             var items = shoppingCart.GetShoppingCartItems();
@@ -93,7 +93,7 @@ namespace Electro_Project.Controllers
 
             return View(response);
         }
-
+        
         public IActionResult AddItemToShoppingCart(int id)
         {
             var item = context.Products.SingleOrDefault(P => P.Id == id);
@@ -104,7 +104,7 @@ namespace Electro_Project.Controllers
             }
             return RedirectToAction(nameof(ShoppingCart));
         }
-
+        
         public IActionResult RemoveItemFromShoppingCart(int id)
         {
             var item = context.Products.SingleOrDefault(P => P.Id == id);

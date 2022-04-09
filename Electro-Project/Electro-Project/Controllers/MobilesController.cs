@@ -11,7 +11,12 @@ using Electro_Project.Models.Context;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Electro_Project.Models.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Electro_Project.Areas.Identity.Data;
+using System.Security.Claims;
 using Electro_Project.Helpers.Pagging;
+
 
 namespace Electro_Project.Controllers
 {
@@ -24,11 +29,9 @@ namespace Electro_Project.Controllers
         private IWebHostEnvironment hostingEnvironment { get; set; }
         private IMediaService mediaService { get; set; }
 
-        private PaginatedList<Mobile> paginatedList { get; set; }
-        private static int PageIndex { get; set; } = 1;
-        private const int PageSize = 2;
 
-        public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService) : base(shoppingCart)
+        public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
+
         {
             service = _mobileService;
             manufacturerService = _manufacturerService;
@@ -38,11 +41,10 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+        
             var mobiles = service.GetAll();
-
-
             paginatedList = PaginatedList<Mobile>.Create(mobiles, PageIndex, PageSize);
             return View(paginatedList);
         }
@@ -59,6 +61,7 @@ namespace Electro_Project.Controllers
             PageIndex -= 1;
 
             return RedirectToAction("Index");
+
         }
 
         // GET: Mobiles/Details/5
@@ -81,6 +84,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id");
@@ -92,6 +96,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Ram,GPU,OS,Color,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Mobile mobile, List<IFormFile> files)
         {
             if (ModelState.IsValid)
@@ -112,6 +117,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
@@ -133,6 +139,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Ram,GPU,OS,Color,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Mobile mobile, List<IFormFile> files)
         {
             if (id != mobile.Id)
@@ -168,6 +175,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Mobiles/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             if (id == null)
@@ -188,6 +196,7 @@ namespace Electro_Project.Controllers
         // POST: Mobiles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             service.Delete(id);
@@ -200,7 +209,7 @@ namespace Electro_Project.Controllers
         }
 
         List<Mobile> matched;
-        public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> OS, List<string> Ram, List<string> Color,string Sort)
+        public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> OS, List<string> Ram, List<string> Color, string Sort)
         {
             var mobiles = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
             matched = new List<Mobile>();
@@ -237,6 +246,6 @@ namespace Electro_Project.Controllers
             return View("index", paginatedList);
         }
 
-     
+
     }
 }

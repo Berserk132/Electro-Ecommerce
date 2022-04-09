@@ -13,6 +13,10 @@ using Microsoft.AspNetCore.Authorization;
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models.Cart;
 using Microsoft.AspNetCore.Hosting;
+using Electro_Project.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
+
 using Electro_Project.Helpers.Pagging;
 
 namespace Electro_Project.Controllers
@@ -30,7 +34,8 @@ namespace Electro_Project.Controllers
         private const int PageSize = 2;
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
-        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService, IMediaService _mediaService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment) : base(shoppingCart)
+
+        public LaptopsController(ILaptopService _service, IManufactureService _manufacturerService, IMediaService _mediaService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             service = _service;
             manufacturerService = _manufacturerService;
@@ -39,10 +44,15 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Laptops
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var laptops = service.GetAll();
 
+            var user = await userManager.GetUserAsync(User);
+
+            if (user != null)
+                ViewBag.WishList = (wishListService.GetByUserId(user.Id)).Select(w => w.PID).ToList();
+            else ViewBag.WishList = new List<int>();
 
             paginatedList =  PaginatedList<Laptop>.Create(laptops, PageIndex, PageSize);
             return View(paginatedList);
@@ -82,6 +92,7 @@ namespace Electro_Project.Controllers
         }
 
         //GET: Laptops/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["ManufacturerID"] = new SelectList(manufacturerService.GetAll(), "Id", "Id");
@@ -93,6 +104,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Ram,RamType,GPU,OS,Color,ScreenSize,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Laptop laptop, List<IFormFile> files)
         {
             if (ModelState.IsValid)
@@ -113,6 +125,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Laptops/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             if (id == null)
@@ -134,6 +147,7 @@ namespace Electro_Project.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Ram,RamType,GPU,OS,Color,ScreenSize,CPU,Width,Height,Thickness,Weight,Id,Name,Price,ManufacturerID,Warranty,UnitInStock,Description")] Laptop laptop, List<IFormFile> files)
         {
             if (id != laptop.Id)
@@ -169,6 +183,7 @@ namespace Electro_Project.Controllers
         }
 
         // GET: Laptops/Delete/5
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             if (id == null)
@@ -189,6 +204,7 @@ namespace Electro_Project.Controllers
         // POST: Laptops/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteConfirmed(int id)
         {
 

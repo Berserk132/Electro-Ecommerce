@@ -1,11 +1,11 @@
 ﻿using Electro_Project.Models.Context;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Electro_Project.Models.Services
 {
     public class WishListService : IWishListService
     {
-
         public ShopContext context { get; set; }
 
         public WishListService(ShopContext _context)
@@ -13,43 +13,33 @@ namespace Electro_Project.Models.Services
             context = _context;
         }
 
-        public void Add(WishList _wishList)
+
+        public void AddToWishList(int PID, string UID)
         {
-            context.Add(_wishList);
+            Product ProdID = context.Products.Find(PID);
+            context.WishLists_Products.Add(new WishList_Product() { PID = PID, UserID = UID });
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
+        public void RemoveFromWishList(int PID, String UID)
+        {
+            WishList_Product prod = context.WishLists_Products.First(P => P.PID == PID && P.UserID == UID);
+            context.WishLists_Products.Remove(prod);
             context.SaveChanges();
         }
-
-        public void Delete(int id)
+        public IEnumerable<WishList_Product> GetByUserId(string id)
         {
-            WishList wishList = context.WishLists.FirstOrDefault(x => x.Id == id);
-            context.Remove(wishList);
-            context.SaveChanges();
-        }
-
-        public IEnumerable<WishList> GetAll()
-        {
-            return context.WishLists
-                    .Include(W => W.User)
-                    .Include(W => W.Products)
-                    .ToList();
-        }
-
-        public WishList GetById(int id)
-        {
-            WishList? wishList = context.WishLists
-                .Include(W => W.User)
-                .Include(W => W.Products)
-                .FirstOrDefault(m => m.Id == id);
-
-            return wishList;
-        }
-
-        public WishList Update(int id, WishList _wishList)
-        {
-            context.Update(_wishList);
-            context.SaveChanges();
-
-            return _wishList;
+            return context.WishLists_Products
+                .Include(w => w.Product)
+                .ThenInclude(W=>W.Media)
+                .Where(m => m.UserID == id);
         }
     }
 }

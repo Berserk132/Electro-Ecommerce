@@ -46,13 +46,14 @@ builder.Services.Configure<PayPalSettings>(builder.Configuration.GetSection("Pay
 
 
 // Custom Services
+builder.Services.AddScoped<IMediaService, MediaService>();
 builder.Services.AddScoped<ILaptopService, LaptopService>();
 builder.Services.AddScoped<IMobileService, MobileService>();
 builder.Services.AddScoped<IOrdersService, OrdersService>();
-builder.Services.AddScoped<IManufactureService, ManufactureService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
-builder.Services.AddScoped<IMediaService, MediaService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IWishListService, WishListService>();
+builder.Services.AddScoped<IManufactureService, ManufactureService>();
 
 
 
@@ -81,7 +82,7 @@ app.MapControllerRoute(
     name: "default",
     //pattern: "{controller=Home}/{action=Index}/{id?}");
     pattern: "{controller=Products}/{action=Index}/{id?}"
-    
+
     );
 
 app.MapRazorPages();
