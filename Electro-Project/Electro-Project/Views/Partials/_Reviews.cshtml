@@ -1,4 +1,8 @@
 ﻿@model Product
+@using Electro_Project.Areas.Identity.Data
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
 
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -41,11 +45,11 @@
 
 
 
-    var perc5 = ((double)stars[4]/(double)totalReviews)*100;
-    var perc4 = ((double)stars[3]/(double)totalReviews)*100;
-    var perc3 = ((double)stars[2]/(double)totalReviews)*100;
-    var perc2 = ((double)stars[1]/(double)totalReviews)*100;
-    var perc1 = ((double)stars[0]/(double)totalReviews)*100;
+    var perc5 = ((double)stars[4] / (double)totalReviews) * 100;
+    var perc4 = ((double)stars[3] / (double)totalReviews) * 100;
+    var perc3 = ((double)stars[2] / (double)totalReviews) * 100;
+    var perc2 = ((double)stars[1] / (double)totalReviews) * 100;
+    var perc1 = ((double)stars[0] / (double)totalReviews) * 100;
 }
 
 
@@ -177,25 +181,28 @@
         </div>
         <!-- /Reviews -->
         <!-- Review Form -->
-        <div class="col-md-3">
-            <div id="review-form">
-                <form asp-controller="Products" asp-action="AddReview" class="review-form">
-                    <input name="ProductId" hidden value="@Model.Id" />
-                    <textarea name="ReviewBody" class="input" placeholder="Your Review"></textarea>
-                    <div class="input-rating">
-                        <span>Your Rating: </span>
-                        <div class="stars">
-                            <input id="star5" name="starsCount" value="5" type="radio"><label for="star5"></label>
-                            <input id="star4" name="starsCount" value="4" type="radio"><label for="star4"></label>
-                            <input id="star3" name="starsCount" value="3" type="radio"><label for="star3"></label>
-                            <input id="star2" name="starsCount" value="2" type="radio"><label for="star2"></label>
-                            <input id="star1" name="starsCount" value="1" type="radio"><label for="star1"></label>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <div class="col-md-3">
+                <div id="review-form">
+                    <form asp-controller="Products" asp-action="AddReview" class="review-form">
+                        <input name="ProductId" hidden value="@Model.Id" />
+                        <textarea name="ReviewBody" class="input" placeholder="Your Review"></textarea>
+                        <div class="input-rating">
+                            <span>Your Rating: </span>
+                            <div class="stars">
+                                <input id="star5" name="starsCount" value="5" type="radio"><label for="star5"></label>
+                                <input id="star4" name="starsCount" value="4" type="radio"><label for="star4"></label>
+                                <input id="star3" name="starsCount" value="3" type="radio"><label for="star3"></label>
+                                <input id="star2" name="starsCount" value="2" type="radio"><label for="star2"></label>
+                                <input id="star1" name="starsCount" value="1" type="radio"><label for="star1"></label>
+                            </div>
                         </div>
-                    </div>
-                    <button class="primary-btn">Submit</button>
-                </form>
+                        <button class="primary-btn">Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        }
         <!-- /Review Form -->
     </div>
 </div>
