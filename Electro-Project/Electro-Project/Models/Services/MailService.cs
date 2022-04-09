@@ -9,7 +9,7 @@ using MimeKit;
 namespace Electro_Project.Models.Services
 {
     /*IMailService,*/
-    public class MailService:IEmailSender
+    public class MailService : IEmailSender
     {
         private readonly MailSettings _mailSettings;
 
