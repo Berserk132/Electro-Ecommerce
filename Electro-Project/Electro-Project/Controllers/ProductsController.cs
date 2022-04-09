@@ -123,7 +123,6 @@ namespace Electro_Project.Controllers
 
             wishListService.RemoveFromWishList(id, UID);
 
-            Product product = productService.GetById(id);
 
             var url = HttpContext.Request.Headers["Referer"];
             if (url[0].Contains("Identity"))
