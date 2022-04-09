@@ -186,6 +186,14 @@
                     <li> <a asp-controller="Products" asp-action="Index">Home</a></li>
                     <li> <a asp-controller="Laptops" asp-action="Index">Laptops</a></li>
                     <li> <a asp-controller="Mobiles" asp-action="Index">Smartphones</a></li>
+
+                    @if (this.User.IsInRole("Admin"))
+                    {
+                        <li> <a asp-controller="Manufacturers" asp-action="Index">Manufacturers</a></li>
+                        <li> <a asp-controller="Role" asp-action="AddRole">Roles</a></li>
+                        <li> <a href="/Identity/Account/AdminRegister">Add Admin</a></li>
+                    }
+
                 </ul>
                 <!-- /NAV -->
             </div>
