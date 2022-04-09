@@ -31,7 +31,7 @@ namespace Electro_Project.Controllers
 
         private PaginatedList<Mobile> paginatedList { get; set; }
         private static int PageIndex { get; set; } = 1;
-        private const int PageSize = 2;
+        private const int PageSize = 3;
 
 
         public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)

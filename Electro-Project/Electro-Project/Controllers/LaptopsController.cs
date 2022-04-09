@@ -31,7 +31,7 @@ namespace Electro_Project.Controllers
 
         private PaginatedList<Laptop> paginatedList { get; set; }
         private static int PageIndex { get; set; } = 1;
-        private const int PageSize = 2;
+        private const int PageSize = 3;
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
 
