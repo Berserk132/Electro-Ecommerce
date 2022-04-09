@@ -93,6 +93,8 @@ namespace Electro_Project.Controllers
 
             product.Reviews.Add(review);
 
+            productService.Update(product.Id, product);
+
             var controllerName = product.GetType().ToString().Split(".")[2] + "s";
 
             return RedirectToAction("Details", controllerName, new { id = product.Id });
