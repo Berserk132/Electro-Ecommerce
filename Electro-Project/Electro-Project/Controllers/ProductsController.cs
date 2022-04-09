@@ -183,7 +183,8 @@ namespace Electro_Project.Controllers
 
             string controller = product.GetType().ToString().Split(".")[2] + "s";
 
-            return RedirectToAction("Edit", controller, new { area = "" });
+            return RedirectToAction("Edit", controller, new { id = product.Id });
+
         }
 
 
