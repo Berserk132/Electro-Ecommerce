@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Electro_Project.Areas.Identity.Data;
 using System.Security.Claims;
+using Electro_Project.Helpers.Pagging;
+
 
 namespace Electro_Project.Controllers
 {
@@ -29,6 +31,7 @@ namespace Electro_Project.Controllers
 
 
         public MobilesController(IMobileService _mobileService, IManufactureService _manufacturerService, ShoppingCart shoppingCart, IWebHostEnvironment _hostingEnvironment, IMediaService _mediaService, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
+
         {
             service = _mobileService;
             manufacturerService = _manufacturerService;
@@ -40,9 +43,25 @@ namespace Electro_Project.Controllers
         // GET: Mobiles
         public async Task<IActionResult> Index()
         {
-            var shopContext = service.GetAll();
-   
-            return View(shopContext.ToList());
+        
+            var mobiles = service.GetAll();
+            paginatedList = PaginatedList<Mobile>.Create(mobiles, PageIndex, PageSize);
+            return View(paginatedList);
+        }
+
+        public IActionResult IncreamentIndex()
+        {
+            PageIndex += 1;
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DecreamentIndex()
+        {
+            PageIndex -= 1;
+
+            return RedirectToAction("Index");
+
         }
 
         // GET: Mobiles/Details/5
@@ -192,9 +211,9 @@ namespace Electro_Project.Controllers
         List<Mobile> matched;
         public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> OS, List<string> Ram, List<string> Color, string Sort)
         {
-            var shopContext = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
+            var mobiles = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
             matched = new List<Mobile>();
-            foreach (var item in shopContext)
+            foreach (var item in mobiles)
             {
                 if ((OS.Count > 0 ? OS : new List<string>() { item.OS.ToString() }).Contains(item.OS.ToString()))
                     if ((Ram.Count > 0 ? Ram : new List<string>() { item.Ram.ToString() }).Contains(item.Ram.ToString()))
@@ -221,7 +240,10 @@ namespace Electro_Project.Controllers
             ViewBag.OS = OS;
             ViewBag.Ram = Ram;
             ViewBag.Color = Color;
-            return View("index", matched);
+
+            paginatedList = PaginatedList<Mobile>.Create(mobiles, PageIndex, PageSize);
+
+            return View("index", paginatedList);
         }
 
 

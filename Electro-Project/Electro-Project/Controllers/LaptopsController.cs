@@ -17,6 +17,8 @@ using Electro_Project.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 
+using Electro_Project.Helpers.Pagging;
+
 namespace Electro_Project.Controllers
 {
     //[Authorize]
@@ -26,6 +28,10 @@ namespace Electro_Project.Controllers
         private ILaptopService service { get; set; }
         private IManufactureService manufacturerService { get; set; }
         private IMediaService mediaService { get; set; }
+
+        private PaginatedList<Laptop> paginatedList { get; set; }
+        private static int PageIndex { get; set; } = 1;
+        private const int PageSize = 2;
 
         private IWebHostEnvironment hostingEnvironment { get; set; }
 
@@ -40,14 +46,30 @@ namespace Electro_Project.Controllers
         // GET: Laptops
         public async Task<IActionResult> Index()
         {
-            var shopContext = service.GetAll();
+            var laptops = service.GetAll();
+
             var user = await userManager.GetUserAsync(User);
 
             if (user != null)
                 ViewBag.WishList = (wishListService.GetByUserId(user.Id)).Select(w => w.PID).ToList();
             else ViewBag.WishList = new List<int>();
 
-            return View(shopContext.ToList());
+            paginatedList =  PaginatedList<Laptop>.Create(laptops, PageIndex, PageSize);
+            return View(paginatedList);
+        }
+
+        public IActionResult IncreamentIndex()
+        {
+            PageIndex += 1;
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DecreamentIndex()
+        {
+            PageIndex -= 1;
+
+            return RedirectToAction("Index");
         }
 
         // GET: Laptops/Details/5
@@ -198,10 +220,10 @@ namespace Electro_Project.Controllers
         [HttpPost]
         public IActionResult Filter(decimal pricemin, decimal pricemax, List<string> GPU, List<string> OS, List<string> Ram, List<string> RamType, List<string> Screen, List<string> Color, string Sort)
         {
-            var shopContext = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
+            var laptops = service.GetAll().Where(C => C.Price < pricemax && C.Price > pricemin);
             List<Laptop> matched = new List<Laptop>();
             //Filter
-            foreach (var item in shopContext)
+            foreach (var item in laptops)
             {
                 if ((OS.Count > 0 ? OS : new List<string>() { item.OS.ToString() }).Contains(item.OS.ToString()))
                     if ((GPU.Count > 0 ? GPU : new List<string>() { item.GPU.ToString() }).Contains(item.GPU.ToString()))
@@ -234,7 +256,11 @@ namespace Electro_Project.Controllers
             ViewBag.Color = Color;
             ViewBag.Screen = Screen;
             ViewBag.RamType = RamType;
-            return View("Index", matched);
+
+            paginatedList = PaginatedList<Laptop>.Create(laptops, PageIndex, PageSize);
+
+
+            return View("Index", paginatedList);
         }
 
 
