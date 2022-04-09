@@ -99,7 +99,7 @@ namespace Electro_Project.Areas.Identity.Pages.Account
                     //await _emailSender.SendEmailAsync(Input.Email, "Confirm Your Email",
                     //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 
-                    await _emailSender.SendEmailAsync(Input.Email, Input.Email,
+                    await _emailSender.SendEmailAsync(Input.Neckname, Input.Email,
                         HtmlEncoder.Default.Encode(callbackUrl));
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
