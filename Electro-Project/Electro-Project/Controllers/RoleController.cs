@@ -2,6 +2,7 @@
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models;
 using Electro_Project.Models.Cart;
+using Electro_Project.Models.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,11 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace Electro_Project.Controllers
 {
     // [Authorize(Roles = "Admin")]
-    public class RoleController : Controller
+    public class RoleController : MainController
     {
         public RoleManager<IdentityRole> RoleManager { get; }
 
-        public RoleController(RoleManager<IdentityRole> _roleManager, ShoppingCart shoppingCart) 
+        public RoleController(RoleManager<IdentityRole> _roleManager, ShoppingCart shoppingCart, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             RoleManager = _roleManager;
         }

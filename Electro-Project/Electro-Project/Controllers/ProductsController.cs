@@ -71,7 +71,7 @@ namespace Electro_Project.Controllers
             var media = mediaService.GetById(id);
             mediaService.Delete(id);
 
-            var prodcut = productService.GetById(id);
+            var prodcut = productService.GetById(media.ProductID);
 
             var controllerName = prodcut.GetType().ToString().Split(".")[2] + "s";
             return RedirectToAction("Edit", controllerName, new { id = prodcut.Id });

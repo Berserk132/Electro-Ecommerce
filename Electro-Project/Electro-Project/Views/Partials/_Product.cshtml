@@ -43,8 +43,8 @@
 
                 @if (this.User.IsInRole("Admin"))
                 {
-                    <button class="add-to-compare"><a asp-action="Edit" asp-route-id="@Model.Id"> <i class="fa fa-pencil"></i><span class="tooltipp">edit</span></a></button>
-                    <button class="add-to-compare"><a asp-action="Delete" asp-route-id="@Model.Id"> <i class="fa fa-trash"></i><span class="tooltipp">delete</span></a></button>
+                    <button class="add-to-compare"><a asp-controller=@(Model.GetType().ToString().Split(".")[2] + "s" ) asp-action="Edit" asp-route-id="@Model.Id"> <i class="fa fa-pencil"></i><span class="tooltipp">edit</span></a></button>
+                    <button class="add-to-compare"><a asp-controller=@(Model.GetType().ToString().Split(".")[2] + "s" ) asp-action="Delete" asp-route-id="@Model.Id"> <i class="fa fa-trash"></i><span class="tooltipp">delete</span></a></button>
                 }
                 <button class="quick-view">
                     <a asp-controller=@(Model.GetType().ToString().Split(".")[2] + "s" )
