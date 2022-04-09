@@ -20,7 +20,7 @@ project for ASP.NET CORE course in ITI
 
 
 # Website Images
-![Demo1](images/image1)
-![Demo2](images/image2)
-![Demo3](images/image3)
-![Demo4](images/image4)
+![Demo1](images/image1.png)
+![Demo2](images/image2.png)
+![Demo3](images/image3.png)
+![Demo4](images/image4.png)
