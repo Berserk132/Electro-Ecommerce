@@ -62,6 +62,7 @@ namespace Electro_Project.Controllers
 
             return RedirectToAction("Details", controllerName, new { id = product.Id });
         }
+        
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteImg(int id)
         {
@@ -73,6 +74,7 @@ namespace Electro_Project.Controllers
             var controllerName = prodcut.GetType().ToString().Split(".")[2] + "s";
             return RedirectToAction("Edit", controllerName, new { id = prodcut.Id });
         }
+
 
 
         [HttpPost]
@@ -93,6 +95,7 @@ namespace Electro_Project.Controllers
 
             return RedirectToAction("Details", controllerName, new { id = product.Id });
         }
+
         [Authorize]
         public IActionResult AddToWishList(int id)
         {
@@ -183,7 +186,8 @@ namespace Electro_Project.Controllers
         }
 
 
-        #region commented
+
+        #region Commented
         //// GET: Products/Create
         //public IActionResult Create()
         //{
@@ -295,6 +299,7 @@ namespace Electro_Project.Controllers
         //{
         //    return _context.Products.Any(e => e.Id == id);
         //}
+
         #endregion
     }
 }

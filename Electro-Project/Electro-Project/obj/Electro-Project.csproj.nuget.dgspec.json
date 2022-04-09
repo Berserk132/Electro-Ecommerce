@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {}
+    "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {}
   },
   "projects": {
-    "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {
+    "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+        "projectUniqueName": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
         "projectName": "Electro-Project",
-        "projectPath": "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
-        "packagesPath": "C:\\Users\\Omnia\\.nuget\\packages\\",
-        "outputPath": "H:\\ITI\\MVC\\Project\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
+        "projectPath": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\Electro-Project.csproj",
+        "packagesPath": "C:\\Users\\Berserk\\.nuget\\packages\\",
+        "outputPath": "F:\\FCI-CU\\Repos\\Electro-Ecommerce\\Electro-Project\\Electro-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Omnia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Berserk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

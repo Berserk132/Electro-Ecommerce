@@ -56,6 +56,7 @@ builder.Services.AddScoped<IWishListService, WishListService>();
 builder.Services.AddScoped<IManufactureService, ManufactureService>();
 
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
