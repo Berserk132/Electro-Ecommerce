@@ -39,9 +39,11 @@ namespace Electro_Project.Controllers
 
             return View();
         }
+
+
         public async Task<IActionResult> Search(string search, string category)
         {
-            var products = productService.GetAll().Where(p => p.Name.Contains(search)).ToList();
+            var products = productService.GetAll().Where(p => p.Name.Contains(search??"")).ToList();
 
 
             var controllerName = category;
