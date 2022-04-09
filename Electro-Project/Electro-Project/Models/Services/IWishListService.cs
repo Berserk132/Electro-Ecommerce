@@ -2,15 +2,8 @@
 {
     public interface IWishListService
     {
-
-        IEnumerable<WishList> GetAll();
-
-        WishList GetById(int id);
-
-        void Add(WishList _wishList);
-
-        WishList Update(int id, WishList _wishList);
-
-        void Delete(int id);
+        public void AddToWishList(int PID, String UID);
+        public void RemoveFromWishList(int PID, String UID);
+        public IEnumerable<WishList_Product> GetByUserId(string id);
     }
 }

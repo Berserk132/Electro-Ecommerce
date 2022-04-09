@@ -159,11 +159,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXFNob3BwaW5nQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/Partials/_MediaEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX01lZGlhRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/Partials/_Reviews.cshtml]
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Partials/_MediaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX01lZGlhRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Partials/_Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1Byb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Partials/_Reviews.cshtml]
+
+
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1Jldmlld3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -187,8 +200,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/Role/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGQuY3NodG1s
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/Role/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGRSb2xlLmNzaHRtbA==
+
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/Shared/Error.cshtml]
@@ -206,6 +224,7 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
+
 
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/WishLists/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXENyZWF0ZS5jc2h0bWw=
@@ -228,6 +247,28 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXEluZGV4LmNzaHRt
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/sameh/ITI/MVC_Intk42/Electro-Ecommerce-main/Electro-Project/Electro-Project/Views/_ViewImports.cshtml]
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/WishLists/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/WishLists/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/WishLists/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/WishLists/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/WishLists/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaExpc3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/ITI/MVC/Project/Electro-Ecommerce/Electro-Project/Electro-Project/Views/_ViewImports.cshtml]
+
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 

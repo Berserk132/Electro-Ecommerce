@@ -3,32 +3,32 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Electro_Project.Models.Services
 {
-    public class LaptopService : ILaptopService
+    public class ProductService : IProductService
     {
         public ShopContext context { get; set; }
 
-        public LaptopService(ShopContext _context)
+        public ProductService(ShopContext _context)
         {
             context = _context;
         }
 
-        public void Add(Laptop _laptop)
+        public void Add(Product _product)
         {
-            context.Add(_laptop);
+            context.Add(_product);
             context.SaveChanges();
         }
 
         public void Delete(int id)
         {
-            Laptop laptop = context.Laptops.FirstOrDefault(x => x.Id == id);
-            context.Remove(laptop);
+            Product product = context.Products.FirstOrDefault(x => x.Id == id);
+            context.Remove(product);
             context.SaveChanges();
         }
 
-        public IEnumerable<Laptop> GetAll()
+        public IEnumerable<Product> GetAll()
         {
 
-            return context.Laptops
+            return context.Products
                 .Include(l => l.Manufacturer)
                 .Include(l => l.Media)
                 .Include(l => l.Reviews)
@@ -36,24 +36,24 @@ namespace Electro_Project.Models.Services
                 .ToList();
         }
 
-        public Laptop GetById(int id)
+        public Product GetById(int id)
         {
-            Laptop? laptop = context.Laptops
+            Product? product = context.Products
                 .Include(l => l.Manufacturer)
                 .Include(l => l.Media)
                 .Include(l => l.Reviews)
                 .ThenInclude(r => r.User)
                 .FirstOrDefault(m => m.Id == id);
 
-            return laptop;
+            return product;
         }
 
-        public Laptop Update(int id, Laptop _laptop)
+        public Product Update(int id, Product _product)
         {
-            context.Update(_laptop);
+            context.Update(_product);
             context.SaveChanges();
 
-            return _laptop;
+            return _product;
         }
     }
 }

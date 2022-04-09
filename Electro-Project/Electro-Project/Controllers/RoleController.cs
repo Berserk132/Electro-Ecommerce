@@ -2,18 +2,19 @@
 using Electro_Project.Controllers.BaseController;
 using Electro_Project.Models;
 using Electro_Project.Models.Cart;
+using Electro_Project.Models.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Electro_Project.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    // [Authorize(Roles = "Admin")]
     public class RoleController : MainController
     {
         public RoleManager<IdentityRole> RoleManager { get; }
 
-        public RoleController(RoleManager<IdentityRole> _roleManager, ShoppingCart shoppingCart) : base(shoppingCart)
+        public RoleController(RoleManager<IdentityRole> _roleManager, ShoppingCart shoppingCart, IWishListService _wishListService, UserManager<AppUser> _userManager) : base(shoppingCart, _userManager, _wishListService)
         {
             RoleManager = _roleManager;
         }
@@ -28,20 +29,20 @@ namespace Electro_Project.Controllers
         }
 
         [HttpPost]
-        public async Task <IActionResult> AddRole(RoleViewModel roleViewModel)
+        public async Task<IActionResult> AddRole(RoleViewModel roleViewModel)
         {
             if (ModelState.IsValid)
             {
-                IdentityRole identityRole = new IdentityRole() { Name = roleViewModel.RoleName};
+                IdentityRole identityRole = new IdentityRole() { Name = roleViewModel.RoleName };
                 IdentityResult result = await RoleManager.CreateAsync(identityRole);
 
                 if (result.Succeeded)
-                    return RedirectToAction("index","products");
+                    return RedirectToAction("index", "products");
                 else
                 {
                     foreach (var item in result.Errors)
                     {
-                        ModelState.AddModelError("",item.Description);
+                        ModelState.AddModelError("", item.Description);
                     }
                 }
             }

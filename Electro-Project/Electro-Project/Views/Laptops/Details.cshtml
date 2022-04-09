@@ -1,9 +1,12 @@
 ﻿@using Electro_Project.Models.Enums
+@using Electro_Project
+@using Electro_Project.Models
 @model Electro_Project.Models.Laptop
 
 @{
     string stock = @Model.UnitInStock > 0 ? "In Stock" : "Out of Stock";
     ViewData["Title"] = "Details";
+    var WishList = ViewBag.WishList;
 }
 
 
@@ -19,14 +22,14 @@
                 <div id="product-main-img">
                     @if (Model.Media.Count == 0)
                     {
-                          <img src="~/img/noImg.jpg" alt="">
+                        <img src="~/img/noImg.jpg" alt="">
                     }
                     @foreach (var item in Model.Media)
-                        {
-                            <div class="product-preview">
-                                <img src="~/img/@item.ImageURL" alt="">
-                            </div>
-                        }
+                    {
+                        <div class="product-preview">
+                            <img src="~/img/@item.ImageURL" alt="">
+                        </div>
+                    }
                 </div>
             </div>
             <!-- /Product main img -->
@@ -57,7 +60,7 @@
                         <a class="review-link" href="#">(@Model.Reviews.Count) Review(s) | Add your review</a>
                     </div>
                     <div>
-                        <h3 class="product-price">@Model.Price<del class="product-old-price">  @(@Model.Price - 2000)</del></h3>
+                        <h3 class="product-price">@Model.Price<del class="product-old-price">  @(@Model.Price + 2000)</del></h3>
                         <span class="product-available">@stock</span>
                     </div>
                     <p>@Model.Description</p>
@@ -80,12 +83,21 @@
                                 <span class="qty-down">-</span>
                             </div>
                         </div>
-                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                        <button class="add-to-cart-btn"><a asp-controller="Orders" asp-action="AddItemToShoppingCart" asp-route-id="@Model.Id"><i class="fa fa-shopping-cart"></i> add to cart</a></button>
                     </div>
 
                     <ul class="product-btns">
-                        <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-                        <li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+                        @if (WishList.Count == 0 || !WishList.Contains(@Model.Id))
+                        {
+                            <button class="add-to-wishlist"><a asp-action="AddToWishList" asp-controller="Products" asp-route-id="@Model.Id"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></a></button>
+                            <li>add to wishlist</li>
+                        }
+                        else
+                        {
+                            <button class="add-to-wishlist"><a asp-action="RemoveFromWishList" asp-controller="Products" asp-route-id="@Model.Id"><i class="fa fa-heart"></i><span class="tooltipp">remove from wishlist</span></a></button>
+                            <li>Remove from wishlist</li>
+                        }
+
                     </ul>
 
                     <ul class="product-links">
