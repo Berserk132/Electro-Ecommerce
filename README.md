@@ -1,5 +1,5 @@
 # Ecommerce Website
-project for ASP.NET CORE course in ITI
+Electro Electronics Store Built Using ASP.NET Core 5 MVC
 
 # team members
 - Ahmed Sayed Ibrahim
